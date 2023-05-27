@@ -193,27 +193,18 @@ nav {
   gap: 15px;
 }
 
-.product-buttons {
-  display: flex;
-  justify-content: center;
-  margin: 5px;
-  gap: 5px;
+.product-card-details > p {
+  font-size: 1.2em;
 }
 
-.product-buttons > button {
-  background-color: var(--button-color);
-  color: var(--site-background);
-  font-size: 1em;
-  font-family: Inter;
-  border: 0;
-  border-radius: 6px;
+.product-card-header {
+  min-width: 320px;
+  min-height: 320px;
+}
+
+.product-card-header > img {
+  max-width: 320px;
+  max-height: 320px;
+  overflow: hidden;
   width: 100%;
-  padding: 10px;
-  transition: 0.1s;
-}
-
-.product-buttons > button:hover {
-  background-color: var(--header-color);
-  color: black;
-  transition: 0.1s;
 }
