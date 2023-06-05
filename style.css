@@ -343,3 +343,93 @@ main {
 .jewlery-img {
   background-image: url(https://cf.ltkcdn.net/jewelry/images/orig/272608-1600x1066-silver-jewelry-styles-care.jpg);
 }
+
+/* Contact */
+
+
+
+
+.contact-container {
+  width: 100vw;
+}
+.contact-box {
+  margin-top: 0.5rem;
+}
+
+.contact-box  {
+  max-width: 30%;
+  max-height: 50vh;
+}
+
+form {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: #465362 1px 1px 4px;
+}
+
+.form-control {
+  padding: 1rem;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control input,
+textarea {
+  width: 100%;
+  padding: 0.2rem;
+  border: none;
+  border-bottom: 1px solid #465362;
+  outline: none;
+}
+
+.box-send {
+  text-align: center;
+}
+
+.btn-send {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-send:hover {
+  opacity: 0.9;
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 992px) {
+  .contact {
+      display: flex;
+      gap: 1rem
+  }
+
+  .contact form {
+      flex-grow: 1;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #a5d7e8;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  color: var(--white);
+
+}
+
+footer p {
+  width: 90vw;
+
+}
