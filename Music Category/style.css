@@ -162,7 +162,7 @@ nav {
   text-align: center;
   padding: 30px 0px 30px 0px;
 }
-
+/* PRODUCT CARD SECTION */
 .card-section {
   display: grid;
   grid-gap: 40px 40px;
@@ -193,27 +193,116 @@ nav {
   gap: 15px;
 }
 
-.product-buttons {
+.product-card-details > p {
+  font-size: 1.2em;
+}
+
+.product-card-header {
+  min-width: 320px;
+  min-height: 320px;
+}
+
+.product-card-header > img {
+  max-width: 320px;
+  max-height: 320px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.category:hover .category-div,
+.category:focus .category-div {
+  transform: scale(1.2);
+}
+
+.category:hover .category-div:before,
+.category:focus .category-div:before {
+  display: block;
+}
+
+.category:hover a,
+.category:focus a {
+  display: block;
+}
+
+.category-div:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(22, 44, 66, 0.75);
+}
+
+.category {
+  min-width: 200px;
+  margin: 20px;
+  height: 300px;
+  border-radius: 5%;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.category-div {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.category-link {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+}
+
+.category-nav {
   display: flex;
   justify-content: center;
-  margin: 5px;
-  gap: 5px;
+  align-items: center;
+  gap: 3%;
+  height: 3rem;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border-top: 1px solid rgb(154, 150, 150);
+  border-bottom: 1px solid rgb(154, 150, 150);
+  transition: 0.3s;
+  margin-bottom: 1rem;
 }
-
-.product-buttons > button {
-  background-color: var(--button-color);
-  color: var(--site-background);
-  font-size: 1em;
-  font-family: Inter;
-  border: 0;
+.clickedButton {
+  background-color: rgba(153, 150, 150, 0.584);
+  color: white;
   border-radius: 6px;
-  width: 100%;
-  padding: 10px;
-  transition: 0.1s;
 }
 
-.product-buttons > button:hover {
-  background-color: var(--header-color);
-  color: black;
-  transition: 0.1s;
+.category-nav > h3 {
+  padding: 3px 15px 3px 15px;
+  transition: 0.2s;
+}
+
+.category-nav :hover {
+  color: white;
+  background-color: #420080;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.border {
+  border-radius: 10px;
+  text-align: center;
+  width: 13%;
 }
