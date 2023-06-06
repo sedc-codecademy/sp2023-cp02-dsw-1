@@ -184,6 +184,13 @@ nav {
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.108);
   border-radius: 10px;
   overflow: hidden;
+  transition: 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(101%);
+  transition: 0.2s;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.108);
 }
 
 .product-card-details {
@@ -198,13 +205,13 @@ nav {
 }
 
 .product-card-header {
-  min-width: 320px;
-  min-height: 320px;
+  min-width: 300px;
+  min-height: 300px;
 }
 
 .product-card-header > img {
-  max-width: 320px;
-  max-height: 320px;
+  max-width: 300px;
+  max-height: 300px;
   overflow: hidden;
-  width: 100%;
+  width: auto;
 }

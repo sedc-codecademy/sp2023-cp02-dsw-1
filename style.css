@@ -157,6 +157,40 @@ nav {
   color: gray;
 }
 
+.categories-ul {
+  list-style-type: none;
+}
+
+ul li .dropdown {
+  display: block;
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+ul li ul .dropdown li {
+  display: block;
+}
+
+ul li ul .dropdown {
+  padding-bottom: 5px;
+  border-radius: 5px;
+  width: 100px;
+  background-color: ghostwhite;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li .dropdown-li:hover {
+  text-shadow: 0px -1px 12px rgba(0, 0, 0, 0.45);
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
 /*       BANNER SECTION */
 
 .banner {
@@ -215,7 +249,19 @@ main {
   flex-direction: column;
   gap: 20px;
 }
-
+/* .category-examples {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.category {
+  background-color: coral;
+  font-size: 24px;
+  min-width: 200px;
+  text-align: center;
+  min-height: 300px;
+  color: white;
+} */
 .category {
   min-width: 200px;
   margin: 20px;
@@ -277,23 +323,113 @@ main {
 }
 
 .clothes-img {
-  background-image: url(./Images/clothes-img.avif);
+  background-image: url(./Images/clothes.avif);
 }
 
 .furniture-img {
-  background-image: url(/images/furniture-img.jpg);
+  background-image: url(https://media.istockphoto.com/id/1213134185/photo/art-deco-interior-in-classic-style-with-pink-armchair-and-pillows-pink-vase-on-table-dark.jpg?s=612x612&w=0&k=20&c=Xoq0WNRAFFBYDigvk8FxB3RKJ_lSU9UnhPtg6DQ72cA=);
 }
 
 .music-img {
-  background-image: url(/images/music-img.jpg);
+  background-image: url(https://static.wixstatic.com/media/15c9e8_32231bead6d7425b9fd7e4da0a395ce9.jpg/v1/fill/w_544,h_346,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/15c9e8_32231bead6d7425b9fd7e4da0a395ce9.jpg);
 }
 
 .electronics-img {
-  background-image: url(/images/electronics-img.jpg);
+  background-image: url(https://p.kindpng.com/picc/s/701-7018178_latest-apple-products-png-transparent-png.png);
 }
 .shoes-img {
-  background-image: url(/images/shoes-img.avif);
+  background-image: url(https://img.freepik.com/premium-photo/leather-shoes-were-lined-up-store-shelves_79762-6343.jpg);
 }
 .jewlery-img {
-  background-image: url(/images/jewlery-img.jpg);
+  background-image: url(https://cf.ltkcdn.net/jewelry/images/orig/272608-1600x1066-silver-jewelry-styles-care.jpg);
+}
+
+/* Contact */
+
+
+
+
+.contact-container {
+  width: 100vw;
+}
+.contact-box {
+  margin-top: 0.5rem;
+}
+
+.contact-box  {
+  max-width: 30%;
+  max-height: 50vh;
+}
+
+form {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: #465362 1px 1px 4px;
+}
+
+.form-control {
+  padding: 1rem;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control input,
+textarea {
+  width: 100%;
+  padding: 0.2rem;
+  border: none;
+  border-bottom: 1px solid #465362;
+  outline: none;
+}
+
+.box-send {
+  text-align: center;
+}
+
+.btn-send {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-send:hover {
+  opacity: 0.9;
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 992px) {
+  .contact {
+      display: flex;
+      gap: 1rem
+  }
+
+  .contact form {
+      flex-grow: 1;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #a5d7e8;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  color: var(--white);
+
+}
+
+footer p {
+  width: 90vw;
+
 }
