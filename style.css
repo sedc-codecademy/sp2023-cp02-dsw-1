@@ -21,41 +21,6 @@ a {
   text-decoration: none;
   color: black;
 }
-
-/*         HEADER SECTION */
-
-header {
-  height: 3vh;
-  background-color: var(--header-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1em;
-}
-
-.icons-and-telephone {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.telephone {
-  display: flex;
-  align-items: center;
-}
-
-.contacts {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-.contacts > a:hover {
-  color: gray;
-}
-
 /*        NAV SECTION */
 
 nav {
@@ -239,39 +204,69 @@ ul li:hover ul.dropdown {
 main {
   padding-top: 80px;
   padding-bottom: 40px;
+  gap: 30px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   justify-content: center;
   background-color: var(--site-background);
 }
 
-.categories {
+.categories-most-searched {
+  background-color: gainsboro;
+  border-radius: 8px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 20px;
+  width: 80%;
+  padding: 10px;
 }
-/* .category-examples {
-  display: flex;
-  gap: 50px;
-  flex-wrap: wrap;
+.title {
+  width: 100%;
 }
+
 .category {
-  background-color: coral;
-  font-size: 24px;
-  min-width: 200px;
-  text-align: center;
-  min-height: 300px;
-  color: white;
-} */
-.category {
-  min-width: 200px;
-  margin: 20px;
+  min-width: 10%;
   height: 300px;
+  margin: 20px;
   border-radius: 5%;
   overflow: hidden;
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
+
+.category-examples {
+  width: 100%;
+  display: grid;
+  grid-row: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* @media only screen and (max-width: 1500px) {
+  .category {
+    min-width: 300px;
+  }
+  .category-examples {
+    place-items: center;
+    grid-row: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .category {
+    min-width: 300px;
+  }
+  .category-examples {
+    place-items: center;
+    grid-row: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+} */
 
 .category-div {
   height: 100%;
@@ -323,23 +318,157 @@ main {
 }
 
 .clothes-img {
-  background-image: url(./Images/clothes.avif);
+  background-image: url(./images/clothes-img.avif);
 }
 
 .furniture-img {
-  background-image: url(https://media.istockphoto.com/id/1213134185/photo/art-deco-interior-in-classic-style-with-pink-armchair-and-pillows-pink-vase-on-table-dark.jpg?s=612x612&w=0&k=20&c=Xoq0WNRAFFBYDigvk8FxB3RKJ_lSU9UnhPtg6DQ72cA=);
+  background-image: url(./images/furniture-img.jpg);
 }
 
 .music-img {
-  background-image: url(https://static.wixstatic.com/media/15c9e8_32231bead6d7425b9fd7e4da0a395ce9.jpg/v1/fill/w_544,h_346,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/15c9e8_32231bead6d7425b9fd7e4da0a395ce9.jpg);
+  background-image: url(./images/music-img.jpg);
 }
 
 .electronics-img {
-  background-image: url(https://p.kindpng.com/picc/s/701-7018178_latest-apple-products-png-transparent-png.png);
+  background-image: url(./images/electronics-img.jpg);
 }
 .shoes-img {
-  background-image: url(https://img.freepik.com/premium-photo/leather-shoes-were-lined-up-store-shelves_79762-6343.jpg);
+  background-image: url(./images/shoes-img.avif);
 }
 .jewlery-img {
-  background-image: url(https://cf.ltkcdn.net/jewelry/images/orig/272608-1600x1066-silver-jewelry-styles-care.jpg);
+  background-image: url(./images/jewlery-img.jpg);
+}
+
+.todays-deals {
+  width: 80%;
+  margin: auto;
+  background-color: gainsboro;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.todays-deals-list {
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.todays-list-item {
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 5%;
+}
+
+.todays-list-item img {
+  width: 100%;
+}
+
+.deal-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.deal {
+  background-color: red;
+  padding: 2px;
+  color: white;
+}
+
+.old-price {
+  color: gray;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+
+.rating-section {
+  width: 80%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: gainsboro;
+  position: relative;
+}
+.rating-title {
+  margin-bottom: 10px;
+}
+.carousel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+  color: white;
+}
+
+.cloud {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  max-width: 300px;
+  background-color: white;
+  color: dimgray;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.stars {
+  color: yellow;
+  font-size: 40px;
+  text-align: center;
+}
+.profile {
+  font-size: larger;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+.profile-photo {
+  width: 60%;
+}
+
+.button-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+}
+
+.scroll-button {
+  padding: 35px 14px;
+  font-size: larger;
+  border: none;
+  transition: 0.3s;
+  background-color: white;
+  opacity: 0;
+}
+
+.rating-section:hover .scroll-button {
+  opacity: 1;
 }
