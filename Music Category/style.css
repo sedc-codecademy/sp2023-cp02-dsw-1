@@ -23,40 +23,6 @@ a {
   color: black;
 }
 
-/*         HEADER SECTION */
-
-header {
-  height: 3vh;
-  background-color: var(--header-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1em;
-}
-
-.icons-and-telephone {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.telephone {
-  display: flex;
-  align-items: center;
-}
-
-.contacts {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-.contacts > a:hover {
-  color: gray;
-}
-
 /*        NAV SECTION */
 
 nav {
