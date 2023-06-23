@@ -23,139 +23,6 @@ a {
 }
 /*        NAV SECTION */
 
-nav {
-  height: 10vh;
-  background-color: var(--site-background);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5%;
-  padding: 10px;
-}
-
-.logo {
-  width: 65px;
-}
-
-.sedc-logo {
-  width: 100%;
-}
-
-.categories-and-deals-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  font-size: 18px;
-}
-
-.sub-category {
-  list-style: none;
-  display: none;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.search-bar {
-  width: 350px;
-  border-radius: 20px;
-  padding: 8px;
-  font-size: 16px;
-  outline: none;
-  border: 1px solid gray;
-  transition: 0.2s;
-}
-.search-bar:focus {
-  border: 1px solid var(--header-color);
-}
-.search-button {
-  transition: 0.5s;
-}
-.search-button:hover {
-  transform: scale(125%);
-}
-
-.account-and-cart {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.account {
-  display: flex;
-  align-items: center;
-}
-
-.account-options {
-  border: 1px solid var(--header-color);
-  padding: 10px 15px;
-}
-.sign-up {
-  transition: 0.3s;
-  border-right: none;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-}
-.sign-up:hover {
-  color: var(--header-color);
-}
-
-.log-in {
-  transition: 0.3s;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-.log-in:hover {
-  color: var(--header-color);
-}
-
-.cart {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 17px;
-}
-.cart:hover {
-  color: gray;
-}
-
-.categories-ul {
-  list-style-type: none;
-}
-
-ul li .dropdown {
-  display: block;
-  padding-top: 10px;
-  text-align: center;
-  text-decoration: none;
-  list-style-type: none;
-}
-
-ul li ul .dropdown li {
-  display: block;
-}
-
-ul li ul .dropdown {
-  padding-bottom: 5px;
-  border-radius: 5px;
-  width: 100px;
-  background-color: ghostwhite;
-  position: absolute;
-  z-index: 999;
-  display: none;
-}
-
-ul li .dropdown-li:hover {
-  text-shadow: 0px -1px 12px rgba(0, 0, 0, 0.45);
-}
-
-ul li:hover ul.dropdown {
-  display: block;
-}
-
 /*       BANNER SECTION */
 
 .banner {
@@ -510,3 +377,174 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+.account-phone-screen {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--site-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  padding: 10px;
+}
+
+.logo {
+  width: 65px;
+}
+
+.sedc-logo {
+  width: 100%;
+}
+
+.categories-and-deals-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+}
+
+.sub-category {
+  list-style: none;
+  display: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search-bar {
+  width: 350px;
+  border-radius: 20px;
+  padding: 8px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid gray;
+  transition: 0.2s;
+}
+.search-bar:focus {
+  border: 1px solid var(--header-color);
+}
+.search-button {
+  transition: 0.5s;
+}
+.search-button:hover {
+  transform: scale(125%);
+}
+
+.account-and-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+}
+
+.account-options {
+  border: 1px solid var(--header-color);
+  padding: 10px 15px;
+}
+.sign-up {
+  transition: 0.3s;
+  border-right: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.sign-up:hover {
+  color: var(--header-color);
+}
+
+.log-in {
+  transition: 0.3s;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.log-in:hover {
+  color: var(--header-color);
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
+}
+.cart:hover {
+  color: gray;
+}
+
+.categories-ul {
+  list-style-type: none;
+}
+
+ul li .dropdown {
+  display: block;
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+ul li ul .dropdown li {
+  display: block;
+}
+
+ul li ul .dropdown {
+  padding-bottom: 5px;
+  border-radius: 5px;
+  width: 100px;
+  background-color: ghostwhite;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li .dropdown-li:hover {
+  text-shadow: 0px -1px 12px rgba(0, 0, 0, 0.45);
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+  .account {
+    display: none;
+  }
+  .account-phone-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    gap: 3%;
+  }
+  .cart-text {
+    display: none;
+  }
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
