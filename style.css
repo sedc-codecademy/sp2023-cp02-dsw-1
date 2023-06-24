@@ -402,6 +402,10 @@ nav {
 
 .logo {
   width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .sedc-logo {
@@ -483,7 +487,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 17px;
+  font-size: 20px;
 }
 .cart:hover {
   color: gray;
@@ -523,6 +527,14 @@ ul li:hover ul.dropdown {
   display: block;
 }
 
+.menu {
+  display: none;
+}
+
+.search-button-phone {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .account {
     display: none;
@@ -531,7 +543,7 @@ ul li:hover ul.dropdown {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -541,6 +553,33 @@ ul li:hover ul.dropdown {
   }
   .cart-text {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .categories-and-deals-list {
+    display: none;
+  }
+  .menu {
+    display: block;
+    font-size: 40px;
+  }
+  nav {
+    gap: 5%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .search {
+    display: none;
+  }
+
+  .search-button-phone {
+    display: block;
+    font-size: 29px;
+  }
+  nav {
+    justify-content: space-around;
+    /* padding: 10px 20px; */
   }
 }
 /*  */
