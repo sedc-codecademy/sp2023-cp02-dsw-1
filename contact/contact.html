@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./contact.css">
 </head>
 
 <body>
-    <header>
+    <header style="padding: 30px !important; ">
         <div class="icons-and-telephone">
             <a href="#">
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 16 16"
@@ -128,23 +129,20 @@
     <main>
 
         <div style="width: 100%;">
-            <div style="width: 50%; float: left;padding: 50px;">
+            <div style="width: 50%; float: left;padding: 20px;">
                 <img src="../images/Contact.jpg" alt="contact" style="width: 100%; ">
             </div>
-            <div style="width: 50%;float: right; padding: 50px;">
+            <div style="width: 50%;float: right; padding: 20px;">
 
                 <form style="width: 100%;" action="#" method="post">
                     <div class="form-control">
-                        <label for="name">Name</label>
-                        <input type="text">
+                        <input type="text" placeholder="Name">
                     </div>
                     <div class="form-control">
-                        <label for="email">Email</label>
-                        <input type="email">
+                           <input type="email" placeholder="Email">
                     </div>
                     <div class="form-control">
-                        <label for="message">Message</label>
-                        <textarea rows="5"></textarea>
+                        <textarea rows="5" placeholder="Message"></textarea>
                     </div>
                     <div class="box-send">
                         <button class="btn-send">Send</button>
@@ -153,8 +151,8 @@
 
             </div>
 
-            <div style="width: 100%; padding: 50px;" >
-                <iframe
+            <div class='iframe-map' >
+                <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11864.532204616104!2d21.463361000000003!3d41.97595305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13543e193840a559%3A0x517ad227c07516f4!2z0KDQtdGB0YLQvtGA0LDQvSDigJ7QoNCw0LPRg9C30LAgOTE54oCc!5e0!3m2!1smk!2smk!4v1669238436374!5m2!1smk!2smk"
                     width="1400" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -162,6 +160,23 @@
         </div>
 
     </main>
+
+    <div style="width: 100%; height: 100px; background-color: rgb(11, 11, 59); padding: 50px;">
+        <h4>Adress</h4>
+        <p>Street 33A,1000 Skopje</p>
+
+        <h4>Contact number</h4>
+        <p>+389 (0)8 8888 888 (08:30 am– 16:30pm, Mon-Fri)</p>
+
+        <h4>Mail adress</h4>
+        <p>dropstore@contact.com</p>
+
+        <h4>Follow us</h4>
+        <img class="fb-logo-img" src="../images/facebook-logo.jpg" alt="">
+    
+
+
+    </div>
 
     <footer>
         <p>
