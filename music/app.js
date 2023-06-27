@@ -40,25 +40,24 @@ const displayData = (data) => {
 
 const categoryFilter = (filteredArray, dummyData, category) => {
   for (let product of dummyData) {
-    if (product.category === category) {
+    if (product.category == category) {
       filteredArray.push(product);
     }
   }
 };
-
 const guitarButton = (productsData) => {
   const filteredArray = [];
-  categoryFilter(filteredArray, productsData, 1);
+  categoryFilter(filteredArray, productsData, "guitar");
   guitars.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    guitars.classList.toggle("clickedButton");
+    guitars.classList.add("clickedButton");
   });
 };
 
 const bassGuitarButton = (productsData) => {
   const filteredArray = [];
-  categoryFilter(filteredArray, productsData, 2);
+  categoryFilter(filteredArray, productsData, "bass-guitar");
   bassGuitars.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
@@ -68,7 +67,7 @@ const bassGuitarButton = (productsData) => {
 
 const keysButton = (productsData) => {
   const filteredArray = [];
-  categoryFilter(filteredArray, productsData, 3);
+  categoryFilter(filteredArray, productsData, "keys");
   keys.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
@@ -78,7 +77,7 @@ const keysButton = (productsData) => {
 
 const drumsButton = (productsData) => {
   const filteredArray = [];
-  categoryFilter(filteredArray, productsData, 4);
+  categoryFilter(filteredArray, productsData, "drums");
   drums.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
@@ -88,7 +87,7 @@ const drumsButton = (productsData) => {
 
 const microphonesButton = (productsData) => {
   const filteredArray = [];
-  categoryFilter(filteredArray, productsData, 5);
+  categoryFilter(filteredArray, productsData, "microphones");
   microphones.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
