@@ -5,6 +5,7 @@ const bassGuitars = document.querySelector(".bass-guitars");
 const keys = document.querySelector(".keys");
 const drums = document.querySelector(".drums");
 const microphones = document.querySelector(".microphones");
+const allProducts = document.querySelector(".all-products");
 
 const filteredArray = [];
 const data = [];
@@ -45,13 +46,21 @@ const categoryFilter = (filteredArray, dummyData, category) => {
     }
   }
 };
+
+const allProductsButton = (productsData) => {
+  allProducts.addEventListener("click", () => {
+    cardSection.innerHTML = "";
+    displayData(productsData);
+  });
+};
+
 const guitarButton = (productsData) => {
   const filteredArray = [];
   categoryFilter(filteredArray, productsData, "guitar");
   guitars.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    guitars.classList.add("clickedButton");
+    // guitars.classList.add("clickedButton");
   });
 };
 
@@ -61,7 +70,7 @@ const bassGuitarButton = (productsData) => {
   bassGuitars.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    bassGuitars.classList.add("clickedButton");
+    // bassGuitars.classList.add("clickedButton");
   });
 };
 
@@ -71,7 +80,7 @@ const keysButton = (productsData) => {
   keys.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    keys.classList.add("clickedButton");
+    // keys.classList.add("clickedButton");
   });
 };
 
@@ -81,7 +90,7 @@ const drumsButton = (productsData) => {
   drums.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    drums.classList.add("clickedButton");
+    // drums.classList.add("clickedButton");
   });
 };
 
@@ -91,14 +100,14 @@ const microphonesButton = (productsData) => {
   microphones.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    microphones.classList.add("clickedButton");
+    // microphones.classList.add("clickedButton");
   });
 };
 
 // Fetching data from local JSON file
 const fetchLocalData = async () => {
   try {
-    const res = await fetch("/Music Category/products.json");
+    const res = await fetch("/music/products.json");
     const data = await res.json();
     microphonesButton(data);
     drumsButton(data);
@@ -106,6 +115,7 @@ const fetchLocalData = async () => {
     bassGuitarButton(data);
     guitarButton(data);
     displayData(data);
+    allProductsButton(data);
     return data;
   } catch (error) {
     throw new Error(error);

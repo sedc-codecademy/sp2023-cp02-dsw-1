@@ -3,6 +3,7 @@ const womanCategory = document.querySelector(".woman");
 const cardSection = document.querySelector(".card-section");
 const kidsCategory = document.querySelector(".kids");
 const mensCategory = document.querySelector(".mens");
+const allProducts = document.querySelector(".all-products");
 
 const filteredArray = [];
 const data = [];
@@ -10,6 +11,13 @@ const data = [];
 const ProductInfo = (data) => {
   mainBody.innerHTML = `<div><h3>${data.title}</h3></div>
 <div><p>${data.price}</p></div>`;
+};
+
+const allProductsButton = (productsData) => {
+  allProducts.addEventListener("click", () => {
+    cardSection.innerHTML = "";
+    displayData(productsData);
+  });
 };
 
 const displayData = (data) => {
@@ -39,7 +47,7 @@ const displayData = (data) => {
 
 const categoryFilter = (filteredArray, dummyData, category) => {
   for (let product of dummyData) {
-    if (product.category === category) {
+    if (product.category == category) {
       filteredArray.push(product);
     }
   }
@@ -47,43 +55,44 @@ const categoryFilter = (filteredArray, dummyData, category) => {
 
 const womanCategoryButton = (productsData) => {
   const filteredArray = [];
-  categoryFilter(filteredArray, productsData, 1);
+  categoryFilter(filteredArray, productsData, "woman");
   womanCategory.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    womanCategory.classList.add("clickedButton");
+    // womanCategory.classList.add("clickedButton");
   });
 };
 
 const kidsCategoryButton = (productsData) => {
   const filteredArray = [];
-  categoryFilter(filteredArray, productsData, 2);
+  categoryFilter(filteredArray, productsData, "kids");
   kidsCategory.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    kidsCategory.classList.add("clickedButton");
+    // kidsCategory.classList.add("clickedButton");
   });
 };
 
 const mensCategoryButton = (productsData) => {
   const filteredArray = [];
-  categoryFilter(filteredArray, productsData, 3);
+  categoryFilter(filteredArray, productsData, "mens");
   mensCategory.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    mensCategory.classList.add("clickedButton");
+    // mensCategory.classList.add("clickedButton");
   });
 };
 
 // Fetching data from local JSON file
 const fetchLocalData = async () => {
   try {
-    const res = await fetch("/Music Category/products.json");
+    const res = await fetch("/shoes/products.json");
     const data = await res.json();
     mensCategoryButton(data);
     kidsCategoryButton(data);
     womanCategoryButton(data);
     displayData(data);
+    allProductsButton(data);
     return data;
   } catch (error) {
     throw new Error(error);

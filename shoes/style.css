@@ -300,3 +300,9 @@ ul li:hover ul.dropdown {
   text-align: center;
   width: 13%;
 }
+
+.all-products {
+  background-color: white;
+  border-radius: 25px;
+  color: #420080;
+}

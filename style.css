@@ -392,7 +392,7 @@ nav {
   z-index: 1;
   width: 100%;
   height: 10vh;
-  background-color: var(--site-background);
+  background-color: rgba(248, 248, 255, 0.947);
   display: flex;
   align-items: center;
   justify-content: center;

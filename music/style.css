@@ -300,14 +300,9 @@ ul li:hover ul.dropdown {
   text-align: center;
   width: 13%;
 }
-@media (max-width: 480px) {
-  body {
-    background-color: #de3163;
-  }
-}
 
-@media (min-width: 768px) {
-  body {
-    background-color: yellow;
-  }
+.all-products {
+  background-color: white;
+  border-radius: 25px;
+  color: #420080;
 }
