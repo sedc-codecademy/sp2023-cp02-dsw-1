@@ -61,11 +61,14 @@ const showSearchButton = document.querySelector(".search-button-phone");
 const searchDisplay = document.querySelector(".search-display-phone");
 
 const menuDisplay = () => {
+  searchDisplay.style.display = "none";
+
   if (menu.style.display === "block") {
     menu.style.display = "none";
   } else {
     menu.style.display = "block";
   }
+
   menu.innerHTML = `
   <li class="phone-menu-item">
  <div class="categories-menu-phone">
@@ -106,15 +109,17 @@ const collapseMenu = () => {
 
 const showCategories = () => {
   menu.innerHTML = `  
-  <li class="dropdown-li-phone"><a href="#">Clothes</a></li>
-  <li class="dropdown-li-phone"><a href="#">Shoes</a></li>
-  <li class="dropdown-li-phone"><a href="#">Jewlery</a></li>
-  <li class="dropdown-li-phone"><a href="#">Electronics</a></li>
-  <li class="dropdown-li-phone"><a href="#">Music</a></li>
+  <li class="dropdown-li-phone border-dropdown"><a href="#">Clothes</a></li>
+  <li class="dropdown-li-phone border-dropdown"><a href="#">Shoes</a></li>
+  <li class="dropdown-li-phone border-dropdown"><a href="#">Jewlery</a></li>
+  <li class="dropdown-li-phone border-dropdown"><a href="#">Electronics</a></li>
+  <li class="dropdown-li-phone border-dropdown"><a href="#">Music</a></li>
   <li class="dropdown-li-phone"><a href="#">Furniture</a></li>`;
 };
 
 const showSearch = () => {
+  menu.style.display = "none";
+
   if (searchDisplay.style.display === "block") {
     searchDisplay.style.display = "none";
   } else {
