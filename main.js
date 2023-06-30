@@ -126,3 +126,178 @@ const showSearch = () => {
     searchDisplay.style.display = "block";
   }
 };
+
+const showMoreBtn = document.querySelector(".show-more-btn");
+const todaysDealsDiv = document.querySelector(".todays-deals-list");
+
+showMoreBtn.addEventListener("click", () => {
+  showMoreBtn.style.display = "none";
+
+  todaysDealsDiv.innerHTML += ` <div class="todays-list-item item1">
+  <img src="images/sedc-logo.webp" alt="">
+  <div class="prices-and-btn">
+    <div class="deal-text">
+      <div class="deal">20% off</div>
+      <span class="new-price">24.00$</span>
+      <span class="old-price"><s>30.00$</s></span>
+    </div>
+    <div class="buy-btn">
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="todays-list-item item2">
+  <img src="images/sedc-logo.webp" alt="">
+  <div class="prices-and-btn">
+    <div class="deal-text">
+      <div class="deal">20% off</div>
+      <span class="new-price">24.00$</span>
+      <span class="old-price"><s>30.00$</s></span>
+    </div>
+    <div class="buy-btn">
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="todays-list-item item3">
+  <img src="images/sedc-logo.webp" alt="">
+  <div class="prices-and-btn">
+    <div class="deal-text">
+      <div class="deal">20% off</div>
+      <span class="new-price">24.00$</span>
+      <span class="old-price"><s>30.00$</s></span>
+    </div>
+    <div class="buy-btn">
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="todays-list-item item4">
+  <img src="images/sedc-logo.webp" alt="">
+  <div class="prices-and-btn">
+    <div class="deal-text">
+      <div class="deal">20% off</div>
+      <span class="new-price">24.00$</span>
+      <span class="old-price"><s>30.00$</s></span>
+    </div>
+    <div class="buy-btn">
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="todays-list-item item5">
+  <img src="images/sedc-logo.webp" alt="">
+  <div class="prices-and-btn">
+    <div class="deal-text">
+      <div class="deal">20% off</div>
+      <span class="new-price">24.00$</span>
+      <span class="old-price"><s>30.00$</s></span>
+    </div>
+    <div class="buy-btn">
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="todays-list-item item6">
+  <img src="images/sedc-logo.webp" alt="">
+  <div class="prices-and-btn">
+    <div class="deal-text">
+      <div class="deal">20% off</div>
+      <span class="new-price">24.00$</span>
+      <span class="old-price"><s>30.00$</s></span>
+    </div>
+    <div class="buy-btn">
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="todays-list-item item7">
+  <img src="images/sedc-logo.webp" alt="">
+  <div class="prices-and-btn">
+    <div class="deal-text">
+      <div class="deal">20% off</div>
+      <span class="new-price">24.00$</span>
+      <span class="old-price"><s>30.00$</s></span>
+    </div>
+    <div class="buy-btn">
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="todays-list-item item8">
+  <img src="images/sedc-logo.webp" alt="">
+  <div class="prices-and-btn">
+    <div class="deal-text">
+      <div class="deal">20% off</div>
+      <span class="new-price">24.00$</span>
+      <span class="old-price"><s>30.00$</s></span>
+    </div>
+    <div class="buy-btn">
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="todays-list-item item9">
+  <img src="images/sedc-logo.webp" alt="">
+  <div class="prices-and-btn">
+    <div class="deal-text">
+      <div class="deal">20% off</div>
+      <span class="new-price">24.00$</span>
+      <span class="old-price"><s>30.00$</s></span>
+    </div>
+    <div class="buy-btn">
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="todays-list-item item10">
+  <img src="images/sedc-logo.webp" alt="">
+  <div class="prices-and-btn">
+    <div class="deal-text">
+      <div class="deal">20% off</div>
+      <span class="new-price">24.00$</span>
+      <span class="old-price"><s>30.00$</s></span>
+    </div>
+    <div class="buy-btn">
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="todays-list-item item10">
+  <img src="images/sedc-logo.webp" alt="">
+  <div class="prices-and-btn">
+    <div class="deal-text">
+      <div class="deal">20% off</div>
+      <span class="new-price">24.00$</span>
+      <span class="old-price"><s>30.00$</s></span>
+    </div>
+    <div class="buy-btn">
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="todays-list-item item10">
+  <img src="images/sedc-logo.webp" alt="">
+  <div class="prices-and-btn">
+    <div class="deal-text">
+      <div class="deal">20% off</div>
+      <span class="new-price">24.00$</span>
+      <span class="old-price"><s>30.00$</s></span>
+    </div>
+    <div class="buy-btn">
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>`;
+});

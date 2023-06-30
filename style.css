@@ -391,6 +391,11 @@ main {
 }
 
 .todays-deals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
   width: 80%;
   margin: auto;
   background-color: gainsboro;
@@ -398,25 +403,32 @@ main {
   border-radius: 8px;
 }
 
+.todays-deals-h2 {
+  width: 100%;
+}
+
 .todays-deals-list {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
   display: grid;
-  gap: 10px;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .todays-list-item {
   padding: 0.5em;
   background-color: white;
   border-radius: 5%;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .todays-list-item img {
   width: 100%;
-  height: 75%;
+  height: 70%;
 }
 
 .deal-text {
@@ -438,6 +450,7 @@ main {
 }
 
 .prices-and-btn {
+  font-size: 15px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -454,17 +467,14 @@ main {
 }
 
 .show-more-btn {
-  display: none;
-}
-
-.show-more-btn {
   font-size: 30px;
   border: none;
-  background: linear-gradient(90deg, lightblue, cadetblue);
+  background: linear-gradient(90deg, cadetblue, lightblue);
   border-radius: 20px;
   padding: 10px;
   cursor: pointer;
   color: white;
+  width: 200px;
 }
 /*  */
 /*  */
@@ -633,6 +643,26 @@ footer {
     grid-row: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .slideshow {
+    height: 360px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .todays-list-item img {
+    height: 72%;
+  }
+
+  .buy-btn button {
+    font-size: smaller;
+  }
+  .deal-text {
+    font-size: smaller;
+  }
+  .slideshow {
+    height: 350px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -650,23 +680,34 @@ footer {
   }
 
   .todays-deals-list {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr 1fr 1fr;
-  }
-  .item9,
-  .item10 {
-    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .show-more-btn {
     display: block;
     margin: auto;
   }
-}
 
-@media only screen and (max-width: 1400px) {
   .todays-list-item img {
-    height: 72%;
+    height: 75%;
+  }
+
+  .buy-btn button {
+    font-size: small;
+  }
+  .deal-text {
+    font-size: small;
+  }
+
+  .slideshow {
+    height: 300px;
+  }
+
+  .todays-deals,
+  .slideshow,
+  .categories-most-searched,
+  .rating-section {
+    width: 90%;
   }
 }
 
@@ -701,6 +742,20 @@ footer {
     font-size: 15px;
     padding: 15px 8px;
   }
+
+  .todays-deals-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .show-more-btn {
+    font-size: 25px;
+    padding: 8px;
+    width: 150px;
+  }
+
+  .slideshow {
+    height: 250px;
+  }
 }
 @media only screen and (max-width: 700px) {
   .search {
@@ -714,11 +769,76 @@ footer {
   nav {
     justify-content: space-around;
   }
+
+  .slideshow {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .todays-deals-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .buy-btn button {
+    font-size: 14px;
+    padding: 6px;
+  }
+  .deal-text {
+    font-size: 14px;
+  }
+  .slideshow {
+    height: 150px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .banner-text > h1 {
     font-size: 36px;
+  }
+
+  .logo {
+    width: 55px;
+  }
+
+  .show-more-btn {
+    font-size: 20px;
+    padding: 6px;
+    width: 120px;
+  }
+
+  .buy-btn button {
+    font-size: 12px;
+    padding: 2px;
+  }
+  .deal-text {
+    font-size: 12px;
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .slideshow {
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .buy-btn button {
+    font-size: 10px;
+    padding: 2px;
+  }
+  .deal-text {
+    font-size: 10px;
+  }
+
+  .banner-text > h1 {
+    font-size: 30px;
+  }
+
+  .banner-button {
+    font-size: 12px;
   }
 }
 
