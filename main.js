@@ -1,41 +1,27 @@
-(function () {
-  let carousel = document.querySelector(".carousel");
-  let carouselInner = carousel.querySelector(".carousel-inner");
-  let carouselItems = carousel.querySelectorAll(".carousel-item");
-  let currentItem = 0;
-  let totalItems = carouselItems.length;
-  let slideWidth = carousel.clientWidth;
+let slideIndex = 0;
+const slideWidth = `100`;
+const slides = document.getElementsByClassName("slide");
+const carouselContent = document.querySelector(".carousel-content");
+const scrollLeftBtn = document.querySelector(".prev-btn");
+const scrollRightBtn = document.querySelector(".next-btn");
 
-  carouselInner.style.transform = "translateX(0)";
+scrollLeftBtn.addEventListener("click", () => {
+  slideIndex -= slideWidth;
 
-  function scrollToPreviousSlide() {
-    if (currentItem === 0) {
-      currentItem = totalItems - 1;
-    } else {
-      currentItem--;
-    }
-    carouselInner.style.transform = `translateX(-${
-      slideWidth * currentItem
-    }px)`;
+  if (slideIndex < 0) slideIndex = 0;
+
+  carouselContent.style.transform = `translateX(-${slideIndex}%)`;
+});
+
+scrollRightBtn.addEventListener("click", () => {
+  slideIndex += slideWidth;
+
+  if (slideIndex > (slides.length - 1) * slideWidth) {
+    slideIndex = (slides.length - 1) * slideWidth;
   }
 
-  function scrollToNextSlide() {
-    if (currentItem === totalItems - 1) {
-      currentItem = 0;
-    } else {
-      currentItem++;
-    }
-    carouselInner.style.transform = `translateX(-${
-      slideWidth * currentItem
-    }px)`;
-  }
-
-  let previousButton = document.getElementById("scroll-left");
-  previousButton.addEventListener("click", scrollToPreviousSlide);
-
-  let nextButton = document.getElementById("scroll-right");
-  nextButton.addEventListener("click", scrollToNextSlide);
-})();
+  carouselContent.style.transform = `translateX(-${slideIndex}%)`;
+});
 
 (function () {
   let slideshow = document.querySelector(".slideshow");
@@ -109,12 +95,31 @@ const collapseMenu = () => {
 
 const showCategories = () => {
   menu.innerHTML = `  
+  <svg class="back-arrow" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M872 474H286.9l350.2-304c5.6-4.9 2.2-14-5.2-14h-88.5c-3.9 0-7.6 1.4-10.5 3.9L155 487.8a31.96 31.96 0 0 0 0 48.3L535.1 866c1.5 1.3 3.3 2 5.2 2h91.5c7.4 0 10.8-9.2 5.2-14L286.9 550H872c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z" ></path></svg>
   <li class="dropdown-li-phone border-dropdown"><a href="#">Clothes</a></li>
   <li class="dropdown-li-phone border-dropdown"><a href="#">Shoes</a></li>
   <li class="dropdown-li-phone border-dropdown"><a href="#">Jewlery</a></li>
   <li class="dropdown-li-phone border-dropdown"><a href="#">Electronics</a></li>
   <li class="dropdown-li-phone border-dropdown"><a href="#">Music</a></li>
   <li class="dropdown-li-phone"><a href="#">Furniture</a></li>`;
+
+  const backArrow = document.querySelector(".back-arrow");
+
+  backArrow.addEventListener("click", () => {
+    menu.innerHTML = `
+    <li class="phone-menu-item">
+   <div class="categories-menu-phone">
+     <ul class="categories-ul-phone">
+       <li>
+         <div class="categories-phone-link" onclick='showCategories()'>Categories</div>
+       </li>
+     </ul>
+   </div>
+  </li>
+  <li class="phone-menu-item middle-item"><a href="#">Deals</a></li>
+  <li class="phone-menu-item"><a href="#">Contact</a></li>
+  </ul>`;
+  });
 };
 
 const showSearch = () => {
