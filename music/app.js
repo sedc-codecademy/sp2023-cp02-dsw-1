@@ -6,25 +6,25 @@ const keys = document.querySelector(".keys");
 const drums = document.querySelector(".drums");
 const microphones = document.querySelector(".microphones");
 const allProducts = document.querySelector(".all-products");
+const quantityElement = document.querySelector(".quantity-number");
+const minusButton = document.querySelector(".minus");
+const plusButton = document.querySelector(".plus");
+const totalPrice = document.querySelector(".total-price");
+const produtCardDetails = document.querySelector(".product-card-details");
 
 const filteredArray = [];
 const data = [];
 
-const ProductInfo = (data) => {
-  mainBody.innerHTML = `<div><h3>${data.title}</h3></div>
-<div><p>${data.price}</p></div>`;
-};
-
 const displayData = (data) => {
   data
     .map((products) => {
-      const productDiv = document.createElement("div");
-      cardSection.appendChild(productDiv);
-      productDiv.addEventListener("click", () => {
-        console.log(data);
-        ProductInfo(products);
-      });
-      return (productDiv.innerHTML = `
+      if (products.subCategory == "music-instruments") {
+        const productDiv = document.createElement("div");
+        cardSection.appendChild(productDiv);
+        productDiv.addEventListener("click", () => {
+          ProductInfo(products);
+        });
+        return (productDiv.innerHTML = `
  		<div class="product-card">
      <div class="product-card-header">
          <img src="${products.image}"></img>
@@ -35,6 +35,7 @@ const displayData = (data) => {
  		</div>
  		  </div>
  		`);
+      }
     })
     .join("");
 };
@@ -124,3 +125,59 @@ const fetchLocalData = async () => {
 fetchLocalData();
 
 categoryFilter(filteredArray, data);
+
+const ProductInfo = (product) => {
+  mainBody.innerHTML = ` <div class="container">
+      <div class="product-div">
+        <div class="product-image">
+        <img src="${product.image}" alt="">
+        </div>
+        <div class="product-details">
+          <h1 class="product-title">${product.title}</h1>
+          <p class="product-description">${product.description}</p>
+          <div class="product-quantity">
+            <p>Quantity</p>
+            <div class="product-quantity-buttons">
+              <button type="button" class="minus" disabled>-</button>
+              <input class="quantity-number" value="1" readonly></input>
+              <button type="button" class="plus" onClick="${PlusButton(
+                product.price
+              )}">+</button>
+            </div>
+            <p class="product-price">${
+              product.price
+            }<b><span class="total-price"></span>$</b></p>
+          </div>
+          <div class="atc-buy-buttons">
+            <button type="button" class="atc" >Add to cart</button>
+            <button type="button" class="buy">Buy now</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-specifications">
+        <h2>Product specifications</h2>
+        <br />
+        <ul class="specifications-list">
+
+        </ul>
+      </div>
+    </div>`;
+};
+const PlusButton = (product) => {
+  plusButton.addEventListener("click", () => {
+    quantityElement.value++;
+    totalPrice.innerHTML = product.price * quantityElement.value;
+    minusButton.disabled = false;
+  });
+};
+
+const MinusButton = (product) => {
+  minusButton.addEventListener("click", () => {
+    if (quantityElement.value < 2) {
+      minusButton.disabled = true;
+    } else {
+      quantityElement.value--;
+    }
+    totalPrice.innerHTML = product.price * quantityElement.value;
+  });
+};

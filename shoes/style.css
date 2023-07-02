@@ -306,3 +306,42 @@ ul li:hover ul.dropdown {
   border-radius: 25px;
   color: #420080;
 }
+/* Footer */
+footer {
+  width: 100%;
+}
+
+.newsletter {
+  height: 250px;
+  background-color: #406882;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.4em;
+}
+
+.form-input {
+  font-size: 0.8em;
+  padding: 0.3em;
+  outline: none;
+}
+
+.form-button {
+  font-size: 0.8em;
+  padding: 0.3em;
+}
+
+.footer-links {
+  height: 180px;
+  background-color: #1a374d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-links a {
+  color: white;
+  font-size: large;
+}

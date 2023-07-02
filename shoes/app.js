@@ -23,14 +23,15 @@ const allProductsButton = (productsData) => {
 const displayData = (data) => {
   data
     .map((products) => {
-      const productDiv = document.createElement("div");
-      productDiv.classList.add("main-product-card-div");
-      cardSection.appendChild(productDiv);
-      productDiv.addEventListener("click", () => {
-        console.log(data);
-        ProductInfo(products);
-      });
-      return (productDiv.innerHTML = `
+      if (products.subCategory == "shoes") {
+        const productDiv = document.createElement("div");
+        productDiv.classList.add("main-product-card-div");
+        cardSection.appendChild(productDiv);
+        productDiv.addEventListener("click", () => {
+          console.log(data);
+          ProductInfo(products);
+        });
+        return (productDiv.innerHTML = `
  		<div class="product-card">
      <div class="product-card-header">
          <img src="${products.image}"></img>
@@ -41,6 +42,7 @@ const displayData = (data) => {
  		</div>
  		  </div>
  		`);
+      }
     })
     .join("");
 };
@@ -75,7 +77,7 @@ const kidsCategoryButton = (productsData) => {
 
 const mensCategoryButton = (productsData) => {
   const filteredArray = [];
-  categoryFilter(filteredArray, productsData, "mens");
+  categoryFilter(filteredArray, productsData, "men's");
   mensCategory.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
@@ -86,7 +88,7 @@ const mensCategoryButton = (productsData) => {
 // Fetching data from local JSON file
 const fetchLocalData = async () => {
   try {
-    const res = await fetch("/shoes/products.json");
+    const res = await fetch("../music/products.json");
     const data = await res.json();
     mensCategoryButton(data);
     kidsCategoryButton(data);
