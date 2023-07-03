@@ -62,6 +62,10 @@ nav {
   font-size: 18px;
 }
 
+.links:hover {
+  color: var(--accent-color);
+}
+
 .sub-category {
   list-style: none;
   display: none;
@@ -495,6 +499,7 @@ main {
   border: 0px;
   border-radius: 6px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .show-more-btn {
