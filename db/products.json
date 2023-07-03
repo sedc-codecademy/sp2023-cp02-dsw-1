@@ -995,7 +995,7 @@
     "title": "Canon EOS Rebel T7i",
     "description": "The Canon EOS Rebel T7i is a versatile and powerful DSLR camera that captures stunning photos and videos.",
     "price": 899.99,
-    "image": "https://example.com/camera1.jpg",
+    "image": "../electronics/assets/Camera/Canon EOS Rebel T7i.jpg",
     "category": "camera",
     "subCategory": "electronic"
   },
@@ -1003,7 +1003,7 @@
     "title": "Nikon D7500",
     "description": "The Nikon D7500 is a high-performance DSLR camera with advanced features and exceptional image quality.",
     "price": 1199.99,
-    "image": "https://example.com/camera2.jpg",
+    "image": "../electronics/assets/Camera/Nikon D7500.webp",
     "category": "camera",
     "subCategory": "electronic"
   },
@@ -1011,7 +1011,7 @@
     "title": "Sony Alpha a7 III",
     "description": "The Sony Alpha a7 III is a mirrorless camera with a full-frame sensor, delivering incredible image quality and performance.",
     "price": 1999.99,
-    "image": "https://example.com/camera3.jpg",
+    "image": "../electronics/assets/Camera/Sony Alpha a7 III.webp",
     "category": "camera",
     "subCategory": "electronic"
   },
@@ -1019,7 +1019,7 @@
     "title": "Fujifilm X-T4",
     "description": "The Fujifilm X-T4 is a compact and lightweight mirrorless camera that offers excellent image stabilization and video capabilities.",
     "price": 1699.99,
-    "image": "https://example.com/camera4.jpg",
+    "image": "../electronics/assets/Camera/Fujifilm X-T4.jpg",
     "category": "camera",
     "subCategory": "electronic"
   },
@@ -1027,7 +1027,7 @@
     "title": "Panasonic Lumix GH5",
     "description": "The Panasonic Lumix GH5 is a professional-grade mirrorless camera with advanced video recording capabilities.",
     "price": 1799.99,
-    "image": "https://example.com/camera5.jpg",
+    "image": "../electronics/assets/Camera/Panasonic Lumix GH5.jpg",
     "category": "camera",
     "subCategory": "electronic"
   },
@@ -1035,7 +1035,7 @@
     "title": "Olympus OM-D E-M1 Mark III",
     "description": "The Olympus OM-D E-M1 Mark III is a rugged and weather-sealed mirrorless camera that excels in both stills and video.",
     "price": 1499.99,
-    "image": "https://example.com/camera6.jpg",
+    "image": "../electronics/assets/Camera/Olympus OM-D E-M1 Mark III.jpg",
     "category": "camera",
     "subCategory": "electronic"
   },
@@ -1043,7 +1043,7 @@
     "title": "Pentax K-1 Mark II",
     "description": "The Pentax K-1 Mark II is a full-frame DSLR camera that offers excellent image quality and a durable build.",
     "price": 1999.99,
-    "image": "https://example.com/camera7.jpg",
+    "image": "../electronics/assets/Camera/Pentax K-1 Mark II.png",
     "category": "camera",
     "subCategory": "electronic"
   },
@@ -1051,7 +1051,7 @@
     "title": "Leica Q2",
     "description": "The Leica Q2 is a premium compact camera with a full-frame sensor, delivering exceptional image quality and craftsmanship.",
     "price": 4999.99,
-    "image": "https://example.com/camera8.jpg",
+    "image": "../electronics/assets/Camera/Leica Q2.jpg",
     "category": "camera",
     "subCategory": "electronic"
   },
@@ -1059,7 +1059,7 @@
     "title": "GoPro Hero 9 Black",
     "description": "The GoPro Hero 9 Black is an action camera that captures stunning 5K videos and high-resolution photos.",
     "price": 449.99,
-    "image": "https://example.com/camera9.jpg",
+    "image": "../electronics/assets/Camera/GoPro Hero 9 Black.jpg",
     "category": "camera",
     "subCategory": "electronic"
   },
@@ -1067,7 +1067,7 @@
     "title": "DJI Osmo Pocket",
     "description": "The DJI Osmo Pocket is a compact and portable camera with a built-in gimbal for smooth and stabilized footage.",
     "price": 349.99,
-    "image": "https://example.com/camera10.jpg",
+    "image": "../electronics/assets/Camera/DJI Osmo Pocket.webp",
     "category": "camera",
     "subCategory": "electronic"
   },
@@ -1075,7 +1075,7 @@
     "title": "PlayStation 5",
     "description": "The PlayStation 5 is the latest gaming console from Sony, offering stunning graphics and immersive gaming experiences.",
     "price": 499.99,
-    "image": "https://example.com/playstation5.jpg",
+    "image": "../electronics/assets/console/PlayStation 5.webp",
     "category": "console",
     "subCategory": "electronic"
   },
@@ -1083,7 +1083,7 @@
     "title": "Xbox Series X",
     "description": "The Xbox Series X is Microsoft's flagship gaming console, delivering high-performance gaming and a vast library of titles.",
     "price": 499.99,
-    "image": "https://example.com/xboxseriesx.jpg",
+    "image": "../electronics/assets/console/Xbox Series X.webp",
     "category": "console",
     "subCategory": "electronic"
   },
@@ -1091,7 +1091,7 @@
     "title": "Nintendo Switch",
     "description": "The Nintendo Switch is a versatile gaming console that can be used as both a handheld device and a traditional home console.",
     "price": 299.99,
-    "image": "https://example.com/nintendoswitch.jpg",
+    "image": "../electronics/assets/console/Nintendo Switch.jpg",
     "category": "console",
     "subCategory": "electronic"
   },
@@ -1099,7 +1099,7 @@
     "title": "PlayStation 4",
     "description": "The PlayStation 4 is a popular gaming console that offers a wide range of games and entertainment options.",
     "price": 299.99,
-    "image": "https://example.com/playstation4.jpg",
+    "image": "../electronics/assets/console/PlayStation 4 option.webp",
     "category": "console",
     "subCategory": "electronic"
   },
@@ -1107,7 +1107,7 @@
     "title": "Xbox One X",
     "description": "The Xbox One X is a powerful gaming console with 4K capabilities, delivering stunning visuals and enhanced performance.",
     "price": 399.99,
-    "image": "https://example.com/xboxonex.jpg",
+    "image": "../electronics/assets/console/Xbox One X.webp",
     "category": "console",
     "subCategory": "electronic"
   },
@@ -1115,7 +1115,7 @@
     "title": "Nintendo 3DS",
     "description": "The Nintendo 3DS is a portable gaming console that offers glasses-free 3D visuals and a vast library of games.",
     "price": 199.99,
-    "image": "https://example.com/nintendo3ds.jpg",
+    "image": "../electronics/assets/console/Nintendo 3DS.png",
     "category": "console",
     "subCategory": "electronic"
   },
@@ -1123,7 +1123,7 @@
     "title": "PlayStation Vita",
     "description": "The PlayStation Vita is a handheld gaming console with a vibrant display and a wide range of gaming experiences.",
     "price": 199.99,
-    "image": "https://example.com/playstationvita.jpg",
+    "image": "../electronics/assets/console/PlayStation Vita.jpg",
     "category": "console",
     "subCategory": "electronic"
   },
@@ -1131,7 +1131,7 @@
     "title": "Xbox Series S",
     "description": "The Xbox Series S is a compact and affordable gaming console that still delivers high-quality gaming experiences.",
     "price": 299.99,
-    "image": "https://example.com/xboxseriess.jpg",
+    "image": "../electronics/assets/console/Xbox Series S.webp",
     "category": "console",
     "subCategory": "electronic"
   },
@@ -1139,7 +1139,7 @@
     "title": "Nintendo Wii U",
     "description": "The Nintendo Wii U is a unique gaming console that offers innovative gameplay and a library of exclusive titles.",
     "price": 249.99,
-    "image": "https://example.com/nintendowiiu.jpg",
+    "image": "../electronics/assets/console/Nintendo Wii U.webp",
     "category": "console",
     "subCategory": "electronic"
   },
@@ -1147,7 +1147,7 @@
     "title": "Sega Genesis Mini",
     "description": "The Sega Genesis Mini is a compact replica of the iconic gaming console, pre-loaded with a collection of classic games.",
     "price": 79.99,
-    "image": "https://example.com/segagenesismini.jpg",
+    "image": "../electronics/assets/console/Sega Genesis Mini.jpg",
     "category": "console",
     "subCategory": "electronic"
   },
@@ -1155,7 +1155,7 @@
     "title": "iPhone 13 Pro",
     "description": "The iPhone 13 Pro is Apple's latest flagship smartphone, featuring a powerful A15 Bionic chip, an advanced camera system, and a stunning Super Retina XDR display.",
     "price": 1099.99,
-    "image": "https://example.com/iphone13pro.jpg",
+    "image": "../electronics/assets/mobile/iPhone 13 Pro.png",
     "category": "mobile",
     "subCategory": "electronic"
   },
@@ -1163,7 +1163,7 @@
     "title": "Samsung Galaxy S21 Ultra",
     "description": "The Samsung Galaxy S21 Ultra is a premium Android smartphone, boasting a large Dynamic AMOLED display, a versatile camera setup, and powerful performance.",
     "price": 1199.99,
-    "image": "https://example.com/galaxys21ultra.jpg",
+    "image": "../electronics/assets/mobile/Samsung Galaxy S21 Ultra.jpeg",
     "category": "mobile",
     "subCategory": "electronic"
   },
@@ -1171,7 +1171,7 @@
     "title": "Google Pixel 6 Pro",
     "description": "The Google Pixel 6 Pro is a high-end smartphone powered by Google's innovative software, featuring an exceptional camera system and fast performance.",
     "price": 999.99,
-    "image": "https://example.com/pixel6pro.jpg",
+    "image": "../electronics/assets/mobile/Google Pixel 6 Pro.jpg",
     "category": "mobile",
     "subCategory": "electronic"
   },
@@ -1179,7 +1179,7 @@
     "title": "OnePlus 9 Pro",
     "description": "The OnePlus 9 Pro is a flagship-grade smartphone, offering smooth performance, a vibrant AMOLED display, and a versatile camera setup.",
     "price": 899.99,
-    "image": "https://example.com/oneplus9pro.jpg",
+    "image": "../electronics/assets/mobile/OnePlus 9 Pro.jpg",
     "category": "mobile",
     "subCategory": "electronic"
   },
@@ -1187,7 +1187,7 @@
     "title": "iPhone SE (2020)",
     "description": "The iPhone SE (2020) combines powerful performance with a compact design, featuring Apple's A13 Bionic chip and a high-quality camera.",
     "price": 399.99,
-    "image": "https://example.com/iphonese2020.jpg",
+    "image": "../electronics/assets/mobile/iPhone SE (2020).jpeg",
     "category": "mobile",
     "subCategory": "electronic"
   },
@@ -1195,7 +1195,7 @@
     "title": "Samsung Galaxy Note 20 Ultra",
     "description": "The Samsung Galaxy Note 20 Ultra is a feature-rich smartphone that comes with a large Dynamic AMOLED display, an S Pen, and a versatile camera system.",
     "price": 1299.99,
-    "image": "https://example.com/galaxynote20ultra.jpg",
+    "image": "../electronics/assets/mobile/Samsung Galaxy Note 20 Ultra.jpg",
     "category": "mobile",
     "subCategory": "electronic"
   },
@@ -1203,7 +1203,7 @@
     "title": "Google Pixel 5",
     "description": "The Google Pixel 5 is a premium smartphone known for its exceptional camera capabilities, stock Android experience, and long-lasting battery life.",
     "price": 699.99,
-    "image": "https://example.com/pixel5.jpg",
+    "image": "../electronics/assets/mobile/Google Pixel 5.jpg",
     "category": "mobile",
     "subCategory": "electronic"
   },
@@ -1211,7 +1211,7 @@
     "title": "OnePlus 9",
     "description": "The OnePlus 9 is a flagship smartphone that offers excellent performance, a smooth 120Hz AMOLED display, and a capable camera system.",
     "price": 699.99,
-    "image": "https://example.com/oneplus9.jpg",
+    "image": "../electronics/assets/mobile/OnePlus 9.jpg",
     "category": "mobile",
     "subCategory": "electronic"
   },
@@ -1219,7 +1219,7 @@
     "title": "iPhone 12",
     "description": "The iPhone 12 is a powerful smartphone featuring Apple's A14 Bionic chip, 5G connectivity, and a stunning Super Retina XDR display.",
     "price": 799.99,
-    "image": "https://example.com/iphone12.jpg",
+    "image": "../electronics/assets/mobile/iPhone 12.jpg",
     "category": "mobile",
     "subCategory": "electronic"
   },
@@ -1227,7 +1227,7 @@
     "title": "Samsung Galaxy S20 FE",
     "description": "The Samsung Galaxy S20 FE is a flagship-level smartphone with a vibrant Super AMOLED display, a versatile camera system, and a sleek design.",
     "price": 699.99,
-    "image": "https://example.com/galaxys20fe.jpg",
+    "image": "../electronics/assets/mobile/Samsung Galaxy S20 FE.jpg",
     "category": "mobile",
     "subCategory": "electronic"
   },
@@ -1235,7 +1235,7 @@
     "title": "Logitech G915 Wireless Mechanical Gaming Keyboard",
     "description": "The Logitech G915 is a wireless mechanical gaming keyboard with low-profile switches, RGB lighting, and programmable macros.",
     "price": 199.99,
-    "image": "https://example.com/logitechg915.jpg",
+    "image": "../electronics/assets/keyboard/Logitech G915 Wireless Mechanical Gaming Keyboard.jpg",
     "category": "keyboard",
     "subCategory": "electronic"
   },
@@ -1243,7 +1243,7 @@
     "title": "Corsair K95 RGB Platinum Mechanical Gaming Keyboard",
     "description": "The Corsair K95 RGB Platinum is a high-end mechanical gaming keyboard featuring Cherry MX switches, per-key RGB lighting, and dedicated macro keys.",
     "price": 179.99,
-    "image": "https://example.com/corsairk95rgb.jpg",
+    "image": "../electronics/assets/keyboard/Corsair K95 RGB Platinum Mechanical Gaming Keyboard.jpg",
     "category": "keyboard",
     "subCategory": "electronic"
   },
@@ -1251,7 +1251,7 @@
     "title": "Razer Huntsman Elite Mechanical Gaming Keyboard",
     "description": "The Razer Huntsman Elite is a premium mechanical gaming keyboard with opto-mechanical switches, customizable RGB lighting, and a detachable wrist rest.",
     "price": 199.99,
-    "image": "https://example.com/razerhuntsmanelite.jpg",
+    "image": "../electronics/assets/keyboard/Razer Huntsman Elite Mechanical Gaming Keyboard.webp",
     "category": "keyboard",
     "subCategory": "electronic"
   },
@@ -1259,7 +1259,7 @@
     "title": "Ducky One 2 Mini Mechanical Keyboard",
     "description": "The Ducky One 2 Mini is a compact 60% mechanical keyboard with a sleek design, customizable RGB lighting, and durable construction.",
     "price": 119.99,
-    "image": "https://example.com/duckyone2mini.jpg",
+    "image": "../electronics/assets/keyboard/Ducky One 2 Mini Mechanical Keyboard.jpg",
     "category": "keyboard",
     "subCategory": "electronic"
   },
@@ -1267,7 +1267,7 @@
     "title": "SteelSeries Apex Pro Mechanical Gaming Keyboard",
     "description": "The SteelSeries Apex Pro is a high-performance mechanical gaming keyboard with adjustable actuation switches, customizable OLED display, and dynamic RGB lighting.",
     "price": 199.99,
-    "image": "https://example.com/steelseriesapexpro.jpg",
+    "image": "../electronics/assets/keyboard/SteelSeries Apex Pro Mechanical Gaming Keyboard.webp",
     "category": "keyboard",
     "subCategory": "electronic"
   },
@@ -1275,7 +1275,7 @@
     "title": "Keychron K2 Wireless Mechanical Keyboard",
     "description": "The Keychron K2 is a versatile wireless mechanical keyboard with hot-swappable switches, compact layout, and compatibility with multiple devices.",
     "price": 79.99,
-    "image": "https://example.com/keychronk2.jpg",
+    "image": "../electronics/assets/keyboard/Keychron K2 Wireless Mechanical Keyboard.jpg",
     "category": "keyboard",
     "subCategory": "electronic"
   },
@@ -1283,7 +1283,7 @@
     "title": "Logitech MX Keys Wireless Keyboard",
     "description": "The Logitech MX Keys is a premium wireless keyboard with backlit keys, comfortable typing experience, and easy switching between multiple devices.",
     "price": 99.99,
-    "image": "https://example.com/logitechmxkeys.jpg",
+    "image": "../electronics/assets/keyboard/Logitech MX Keys Wireless Keyboard.jpg",
     "category": "keyboard",
     "subCategory": "electronic"
   },
@@ -1291,7 +1291,7 @@
     "title": "HyperX Alloy Origins Mechanical Gaming Keyboard",
     "description": "The HyperX Alloy Origins is a compact mechanical gaming keyboard with reliable switches, customizable RGB lighting, and durable aluminum construction.",
     "price": 109.99,
-    "image": "https://example.com/hyperxalloyorigins.jpg",
+    "image": "../electronics/assets/keyboard/HyperX Alloy Origins Mechanical Gaming Keyboard.jpg",
     "category": "keyboard",
     "subCategory": "electronic"
   },
@@ -1299,7 +1299,7 @@
     "title": "Razer BlackWidow Elite Mechanical Gaming Keyboard",
     "description": "The Razer BlackWidow Elite is a popular mechanical gaming keyboard with Razer Green switches, programmable macro keys, and customizable Chroma RGB lighting.",
     "price": 129.99,
-    "image": "https://example.com/razerblackwidowelite.jpg",
+    "image": "../electronics/assets/keyboard/Razer BlackWidow Elite Mechanical Gaming Keyboard.png",
     "category": "keyboard",
     "subCategory": "electronic"
   },
@@ -1307,7 +1307,7 @@
     "title": "Corsair K70 RGB MK.2 Mechanical Gaming Keyboard",
     "description": "The Corsair K70 RGB MK.2 is a full-size mechanical gaming keyboard featuring Cherry MX switches, per-key RGB lighting, and dedicated multimedia controls.",
     "price": 159.99,
-    "image": "https://example.com/corsairk70rgb.jpg",
+    "image": "../electronics/assets/keyboard/Corsair K70 RGB MK.2 Mechanical Gaming Keyboard.webp",
     "category": "keyboard",
     "subCategory": "electronic"
   }
