@@ -371,7 +371,8 @@ main {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 50px;
+  height: 100%;
+  width: 100%;
 }
 
 .category:hover .category-div,
@@ -384,9 +385,11 @@ main {
   display: block;
 }
 
-.category:hover a,
-.category:focus a {
-  display: block;
+.category:hover .category-link,
+.category:focus .category-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .category-div:before {
@@ -502,7 +505,8 @@ main {
   transition: 0.2s;
 }
 
-.show-more-btn {
+.show-more-btn,
+.show-less-btn {
   font-size: 20px;
   border: none;
   background-color: var(--accent-color);
@@ -516,11 +520,16 @@ main {
   box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.3);
 }
 
-.show-more-btn:hover {
+.show-more-btn:hover,
+.show-less-btn:hover {
   background-color: white;
   color: var(--accent-color);
   box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.3);
   transition: 0.2s;
+}
+
+.show-less-btn {
+  display: none;
 }
 /*  */
 /*  */

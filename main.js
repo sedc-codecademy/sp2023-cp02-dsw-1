@@ -134,175 +134,92 @@ const showSearch = () => {
 
 const showMoreBtn = document.querySelector(".show-more-btn");
 const todaysDealsDiv = document.querySelector(".todays-deals-list");
+const showLessBtn = document.querySelector(".show-less-btn");
 
-showMoreBtn.addEventListener("click", () => {
-  showMoreBtn.style.display = "none";
+const fetchLocalData = async () => {
+  try {
+    const res = await fetch("./db/products.json");
+    const data = await res.json();
+    const dealsItems = data.filter((item) => item.subCategory === "deals");
+    displayDeals(dealsItems);
+    showMoreBtn.addEventListener("click", () => {
+      showMoreBtn.style.display = "none";
+      showLessBtn.style.display = "block";
 
-  todaysDealsDiv.innerHTML += ` <div class="todays-list-item item1">
-  <img src="images/sedc-logo.webp" alt="">
-  <div class="prices-and-btn">
-    <div class="deal-text">
-      <div class="deal">20% off</div>
-      <span class="new-price">24.00$</span>
-      <span class="old-price"><s>30.00$</s></span>
-    </div>
-    <div class="buy-btn">
-      <button>Buy Now</button>
-    </div>
-  </div>
-</div>
+      const lastSix = dealsItems.slice(6);
 
-<div class="todays-list-item item2">
-  <img src="images/sedc-logo.webp" alt="">
-  <div class="prices-and-btn">
-    <div class="deal-text">
-      <div class="deal">20% off</div>
-      <span class="new-price">24.00$</span>
-      <span class="old-price"><s>30.00$</s></span>
-    </div>
-    <div class="buy-btn">
-      <button>Buy Now</button>
-    </div>
-  </div>
-</div>
+      lastSix.forEach((item) => {
+        const oldPrice = item.price + item.price * 0.27;
+        todaysDealsDiv.innerHTML += `
+          <div class="todays-list-item">
+          <img src="${item.image}" alt="">
+          <div class="prices-and-btn">
+            <div class="deal-text">
+              <div class="deal">27% off</div>
+              <span class="new-price">${item.price}</span>
+              <span class="old-price"><s>${oldPrice.toFixed(2)}$</s></span>
+            </div>
+            <div class="buy-btn">
+              <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+      `;
+      });
+    });
 
-<div class="todays-list-item item3">
-  <img src="images/sedc-logo.webp" alt="">
-  <div class="prices-and-btn">
-    <div class="deal-text">
-      <div class="deal">20% off</div>
-      <span class="new-price">24.00$</span>
-      <span class="old-price"><s>30.00$</s></span>
-    </div>
-    <div class="buy-btn">
-      <button>Buy Now</button>
-    </div>
-  </div>
-</div>
+    showLessBtn.addEventListener("click", () => {
+      showMoreBtn.style.display = "block";
+      showLessBtn.style.display = "none";
 
-<div class="todays-list-item item4">
-  <img src="images/sedc-logo.webp" alt="">
-  <div class="prices-and-btn">
-    <div class="deal-text">
-      <div class="deal">20% off</div>
-      <span class="new-price">24.00$</span>
-      <span class="old-price"><s>30.00$</s></span>
+      const firstSix = dealsItems.slice(0, 6);
+      todaysDealsDiv.innerHTML = ` `;
+      firstSix.forEach((item) => {
+        const oldPrice = item.price + item.price * 0.27;
+        todaysDealsDiv.innerHTML += `
+      <div class="todays-list-item">
+      <img src="${item.image}" alt="">
+      <div class="prices-and-btn">
+        <div class="deal-text">
+          <div class="deal">27% off</div>
+          <span class="new-price">${item.price}</span>
+          <span class="old-price"><s>${oldPrice.toFixed(2)}$</s></span>
+        </div>
+        <div class="buy-btn">
+          <button>Buy Now</button>
+        </div>
+      </div>
     </div>
-    <div class="buy-btn">
-      <button>Buy Now</button>
-    </div>
-  </div>
-</div>
+  `;
+      });
+    });
 
-<div class="todays-list-item item5">
-  <img src="images/sedc-logo.webp" alt="">
-  <div class="prices-and-btn">
-    <div class="deal-text">
-      <div class="deal">20% off</div>
-      <span class="new-price">24.00$</span>
-      <span class="old-price"><s>30.00$</s></span>
-    </div>
-    <div class="buy-btn">
-      <button>Buy Now</button>
-    </div>
-  </div>
-</div>
+    return data;
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+fetchLocalData();
 
-<div class="todays-list-item item6">
-  <img src="images/sedc-logo.webp" alt="">
-  <div class="prices-and-btn">
-    <div class="deal-text">
-      <div class="deal">20% off</div>
-      <span class="new-price">24.00$</span>
-      <span class="old-price"><s>30.00$</s></span>
-    </div>
-    <div class="buy-btn">
-      <button>Buy Now</button>
-    </div>
-  </div>
-</div>
+const displayDeals = (data) => {
+  const firstSix = data.slice(0, 6);
 
-<div class="todays-list-item item7">
-  <img src="images/sedc-logo.webp" alt="">
-  <div class="prices-and-btn">
-    <div class="deal-text">
-      <div class="deal">20% off</div>
-      <span class="new-price">24.00$</span>
-      <span class="old-price"><s>30.00$</s></span>
+  firstSix.forEach((item) => {
+    const oldPrice = item.price + item.price * 0.27;
+    todaysDealsDiv.innerHTML += `
+      <div class="todays-list-item">
+      <img src="${item.image}" alt="">
+      <div class="prices-and-btn">
+        <div class="deal-text">
+          <div class="deal">27% off</div>
+          <span class="new-price">${item.price}</span>
+          <span class="old-price"><s>${oldPrice.toFixed(2)}$</s></span>
+        </div>
+        <div class="buy-btn">
+          <button>Buy Now</button>
+        </div>
+      </div>
     </div>
-    <div class="buy-btn">
-      <button>Buy Now</button>
-    </div>
-  </div>
-</div>
-
-<div class="todays-list-item item8">
-  <img src="images/sedc-logo.webp" alt="">
-  <div class="prices-and-btn">
-    <div class="deal-text">
-      <div class="deal">20% off</div>
-      <span class="new-price">24.00$</span>
-      <span class="old-price"><s>30.00$</s></span>
-    </div>
-    <div class="buy-btn">
-      <button>Buy Now</button>
-    </div>
-  </div>
-</div>
-
-<div class="todays-list-item item9">
-  <img src="images/sedc-logo.webp" alt="">
-  <div class="prices-and-btn">
-    <div class="deal-text">
-      <div class="deal">20% off</div>
-      <span class="new-price">24.00$</span>
-      <span class="old-price"><s>30.00$</s></span>
-    </div>
-    <div class="buy-btn">
-      <button>Buy Now</button>
-    </div>
-  </div>
-</div>
-
-<div class="todays-list-item item10">
-  <img src="images/sedc-logo.webp" alt="">
-  <div class="prices-and-btn">
-    <div class="deal-text">
-      <div class="deal">20% off</div>
-      <span class="new-price">24.00$</span>
-      <span class="old-price"><s>30.00$</s></span>
-    </div>
-    <div class="buy-btn">
-      <button>Buy Now</button>
-    </div>
-  </div>
-</div>
-
-<div class="todays-list-item item10">
-  <img src="images/sedc-logo.webp" alt="">
-  <div class="prices-and-btn">
-    <div class="deal-text">
-      <div class="deal">20% off</div>
-      <span class="new-price">24.00$</span>
-      <span class="old-price"><s>30.00$</s></span>
-    </div>
-    <div class="buy-btn">
-      <button>Buy Now</button>
-    </div>
-  </div>
-</div>
-
-<div class="todays-list-item item10">
-  <img src="images/sedc-logo.webp" alt="">
-  <div class="prices-and-btn">
-    <div class="deal-text">
-      <div class="deal">20% off</div>
-      <span class="new-price">24.00$</span>
-      <span class="old-price"><s>30.00$</s></span>
-    </div>
-    <div class="buy-btn">
-      <button>Buy Now</button>
-    </div>
-  </div>
-</div>`;
-});
+  `;
+  });
+};
