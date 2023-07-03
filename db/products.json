@@ -1310,5 +1310,101 @@
     "image": "../electronics/assets/keyboard/Corsair K70 RGB MK.2 Mechanical Gaming Keyboard.webp",
     "category": "keyboard",
     "subCategory": "electronic"
+  },
+  {
+    "title": "Corsair K70 RGB MK.2 Mechanical Gaming Keyboard",
+    "description": "The Corsair K70 RGB MK.2 is a full-size mechanical gaming keyboard featuring Cherry MX switches, per-key RGB lighting, and dedicated multimedia controls.",
+    "price": 159.99,
+    "image": "../electronics/assets/keyboard/Corsair K70 RGB MK.2 Mechanical Gaming Keyboard.webp",
+    "category": "keyboard",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Keychron K2 Wireless Mechanical Keyboard",
+    "description": "The Keychron K2 is a versatile wireless mechanical keyboard with hot-swappable switches, compact layout, and compatibility with multiple devices.",
+    "price": 79.99,
+    "image": "../electronics/assets/keyboard/Keychron K2 Wireless Mechanical Keyboard.jpg",
+    "category": "keyboard",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Google Pixel 6 Pro",
+    "description": "The Google Pixel 6 Pro is a high-end smartphone powered by Google's innovative software, featuring an exceptional camera system and fast performance.",
+    "price": 999.99,
+    "image": "../electronics/assets/mobile/Google Pixel 6 Pro.jpg",
+    "category": "mobile",
+    "subCategory": "deals"
+  },
+  {
+    "title": "OnePlus 9 Pro",
+    "description": "The OnePlus 9 Pro is a flagship-grade smartphone, offering smooth performance, a vibrant AMOLED display, and a versatile camera setup.",
+    "price": 899.99,
+    "image": "../electronics/assets/mobile/OnePlus 9 Pro.jpg",
+    "category": "mobile",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Taylor 214ce",
+    "description": "The Taylor 214ce is a popular acoustic-electric guitar with a solid Sitka spruce top and versatile electronics.",
+    "price": 1199.99,
+    "image": "../music/assets/Guitars/Taylor 214ce.jpg",
+    "category": "guitar",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Shure SM7B Vocal Dynamic Microphone",
+    "description": "The Shure SM7B is a popular vocal dynamic microphone known for its smooth and warm sound reproduction. It's widely used in radio and broadcasting.",
+    "price": 399.99,
+    "image": "../music/assets/Microphones/Shure SM7B Vocal Dynamic Microphone.jpg",
+    "category": "microphones",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Rode NT5 Small-Diaphragm Condenser Microphone",
+    "description": "The Rode NT5 is a pair of compact small-diaphragm condenser microphones suitable for stereo recording and capturing detailed acoustic instruments.",
+    "price": 249.99,
+    "image": "../music/assets/Microphones/Rode NT5 Small-Diaphragm Condenser Microphone.jpg",
+    "category": "microphones",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Stylish Boots",
+    "description": "These stylish boots are perfect for adding a rugged touch to your outfits. They are made of durable leather and have a sturdy sole.",
+    "price": 129.99,
+    "image": "../shoes/assets/man/Stylish Boots.webp",
+    "category": "men's",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Casual Slip-Ons",
+    "description": "These casual slip-on shoes are great for relaxed days. They have a convenient slip-on design and a comfortable fit.",
+    "price": 59.99,
+    "image": "../shoes/assets/man/Casual Slip-Ons.jpg",
+    "category": "men's",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Drumsticks",
+    "description": "Pair of drumsticks made from durable hickory wood.",
+    "price": 9.99,
+    "image": "../music/assets/Drums/Drumsticks.webp",
+    "category": "drums",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Drum Practice Pad",
+    "description": "Silent drum practice pad for developing drumming skills.",
+    "price": 29.99,
+    "image": "../music/assets/Drums/Drum Practice Pad.jpg",
+    "category": "drums",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Roland JUNO-DS76 Synthesizer",
+    "description": "The Roland JUNO-DS76 is a versatile synthesizer with a wide range of sounds suitable for live performance and music production. It features an intuitive interface and a lightweight, portable design.",
+    "price": 999.99,
+    "image": "../music/assets/Keys/roland JUNO-ds76.jpg",
+    "category": "keys",
+    "subCategory": "deals"
   }
 ]
