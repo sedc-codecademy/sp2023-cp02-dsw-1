@@ -4,9 +4,6 @@ const cardSection = document.querySelector(".card-section");
 const console = document.querySelector(".console");
 const device = document.querySelector(".device");
 const mouse_keyboard = document.querySelector(".mouse_keyboard");
-const screen = document.querySelector(".screen");
-const sound = document.querySelector(".sound");
-const storage = document.querySelector(".storage");
 const allProducts = document.querySelector(".all-products");
 
 const filteredArray = [];
@@ -20,12 +17,13 @@ const ProductInfo = (data) => {
 const displayData = (data) => {
   data
     .map((products) => {
-      const productDiv = document.createElement("div");
-      cardSection.appendChild(productDiv);
-      productDiv.addEventListener("click", () => {
-        ProductInfo(products);
-      });
-      return (productDiv.innerHTML = `
+      if (products.subCategory == "electronic") {
+        const productDiv = document.createElement("div");
+        cardSection.appendChild(productDiv);
+        productDiv.addEventListener("click", () => {
+          ProductInfo(products);
+        });
+        return (productDiv.innerHTML = `
  		<div class="product-card">
      <div class="product-card-header">
          <img src="${products.image}"></img>
@@ -36,6 +34,7 @@ const displayData = (data) => {
  		</div>
  		  </div>
  		`);
+      }
     })
     .join("");
 };
@@ -75,7 +74,7 @@ const consoleButton = (productsData) => {
 
 const deviceButton = (productsData) => {
   const filteredArray = [];
-  categoryFilter(filteredArray, productsData, "device");
+  categoryFilter(filteredArray, productsData, "mobile");
   device.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
@@ -84,33 +83,8 @@ const deviceButton = (productsData) => {
 
 const mouse_keyboardButton = (productsData) => {
   const filteredArray = [];
-  categoryFilter(filteredArray, productsData, "mouse_keyboard");
+  categoryFilter(filteredArray, productsData, "keyboard");
   mouse_keyboard.addEventListener("click", () => {
-    cardSection.innerHTML = "";
-    displayData(filteredArray);
-  });
-};
-
-const screenButton = (productsData) => {
-  const filteredArray = [];
-  categoryFilter(filteredArray, productsData, "screen");
-  screen.addEventListener("click", () => {
-    cardSection.innerHTML = "";
-    displayData(filteredArray);
-  });
-};
-const soundButton = (productsData) => {
-  const filteredArray = [];
-  categoryFilter(filteredArray, productsData, "sound");
-  sound.addEventListener("click", () => {
-    cardSection.innerHTML = "";
-    displayData(filteredArray);
-  });
-};
-const storageButton = (productsData) => {
-  const filteredArray = [];
-  categoryFilter(filteredArray, productsData, "storage");
-  storage.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
   });
@@ -118,16 +92,13 @@ const storageButton = (productsData) => {
 
 const fetchLocalData = async () => {
   try {
-    const res = await fetch("/electronics/products.json");
+    const res = await fetch("../db/products.json");
     const data = await res.json();
     displayData(data);
     cameraButton(data);
     consoleButton(data);
     deviceButton(data);
     mouse_keyboardButton(data);
-    screenButton(data);
-    soundButton(data);
-    storageButton(data);
     allProductsButton(data);
     return data;
   } catch (error) {

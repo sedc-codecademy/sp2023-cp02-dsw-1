@@ -108,7 +108,7 @@ const microphonesButton = (productsData) => {
 // Fetching data from local JSON file
 const fetchLocalData = async () => {
   try {
-    const res = await fetch("/music/products.json");
+    const res = await fetch("../db/products.json");
     const data = await res.json();
     microphonesButton(data);
     drumsButton(data);
