@@ -23,8 +23,8 @@ const menuDisplay = () => {
    </ul>
  </div>
 </li>
-<li class="phone-menu-item middle-item"><a href="#">Deals</a></li>
-<li class="phone-menu-item middle-item"><a href="#">Contact</a></li>
+<li class="phone-menu-item middle-item"><a href="../deals/index.html">Deals</a></li>
+<li class="phone-menu-item middle-item"><a href="../contact/index.html">Contact</a></li>
 <li class="phone-menu-item"><a href="../index.html">SEDC Home</a></li>
 </ul>`;
 };
@@ -157,7 +157,7 @@ const earringsRoseBtn = (productsData) => {
   earingsRose.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    earingsRose.classList.toggle("clickedButton");
+    //earingsRose.classList.toggle("clickedButton");
   });
 };
 
@@ -167,7 +167,7 @@ const earingsWhiteBtn = (productsData) => {
   earingsWhite.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    earingsWhite.classList.toggle("clickedButton");
+    //earingsWhite.classList.toggle("clickedButton");
   });
 };
 
@@ -177,7 +177,7 @@ const earringsDiamondBtn = (productsData) => {
   earingsDiamond.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    earingsDiamond.classList.toggle("clickedButton");
+    //earingsDiamond.classList.toggle("clickedButton");
   });
 };
 
@@ -187,7 +187,7 @@ const allEarringsBtn = (productsData) => {
   allEarrings.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    allEarrings.classList.toggle("clickedButton");
+    //allEarrings.classList.toggle("clickedButton");
   });
 };
 
@@ -203,7 +203,7 @@ const ringsRoseBtn = (productsData) => {
   ringsRose.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    ringsRose.classList.toggle("clickedButton");
+    //ringsRose.classList.toggle("clickedButton");
   });
 };
 
@@ -213,7 +213,7 @@ const ringsWhiteBtn = (productsData) => {
   ringsWhite.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    ringsWhite.classList.toggle("clickedButton");
+    //ringsWhite.classList.toggle("clickedButton");
   });
 };
 
@@ -223,7 +223,7 @@ const ringsDiamondBtn = (productsData) => {
   ringsDiamond.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    ringsDiamond.classList.toggle("clickedButton");
+    //ringsDiamond.classList.toggle("clickedButton");
   });
 };
 
@@ -233,7 +233,7 @@ const allRingsBtn = (productsData) => {
   allRings.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    allRings.classList.add("clickedButton");
+    //allRings.classList.add("clickedButton");
   });
 };
 
@@ -249,7 +249,7 @@ const necklaceRoseBtn = (productsData) => {
   necklaceRose.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    necklace.classList.toggle("clickedButton");
+    //necklace.classList.toggle("clickedButton");
   });
 };
 
@@ -259,7 +259,7 @@ const necklaceWhiteBtn = (productsData) => {
   necklaceWhite.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    necklaceWhite.classList.toggle("clickedButton");
+    //necklaceWhite.classList.toggle("clickedButton");
   });
 };
 
@@ -269,7 +269,7 @@ const necklaceDiamondBtn = (productsData) => {
   necklaceDiamond.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    necklaceDiamond.classList.toggle("clickedButton");
+    //necklaceDiamond.classList.toggle("clickedButton");
   });
 };
 
@@ -279,7 +279,7 @@ const allNecklacesBtn = (productsData) => {
   allNecklaces.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-    allNecklaces.classList.add("clickedButton");
+    //allNecklaces.classList.add("clickedButton");
   });
 };
 
@@ -300,7 +300,7 @@ const allProductsButton = (productsData) => {
   allProducts.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(alldata);
-    allProducts.classList.toggle("clickedButton");
+    //allProducts.classList.toggle("clickedButton");
   });
 };
 
