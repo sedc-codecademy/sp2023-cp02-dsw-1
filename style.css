@@ -655,7 +655,7 @@ footer {
 }
 
 .newsletter {
-  height: 250px;
+  height: 150px;
   background-color: #406882;
   display: flex;
   align-items: center;
@@ -669,7 +669,16 @@ footer {
   font-size: 0.8em;
   padding: 0.3em;
   outline: none;
-  border-radius: 10px;
+  border: 0;
+  opacity: 50%;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.form-input:hover,
+.form-input:focus {
+  transition: 0.2s;
+  opacity: 100%;
 }
 
 .form-button {
@@ -678,11 +687,17 @@ footer {
   background-color: var(--accent-color);
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+.form-button:hover {
+  transition: 0.2s;
+  transform: scale(1.05);
+  box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.3);
 }
 
 .footer-links {
-  height: 180px;
+  height: 100px;
   background-color: #1a374d;
   display: flex;
   align-items: center;
@@ -692,9 +707,11 @@ footer {
 .footer-links a {
   color: white;
   font-size: large;
+  transition: 0.2s;
 }
 
 .footer-links a:hover {
+  transition: 0.2s;
   color: #a5d7e8;
 }
 
@@ -838,6 +855,14 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
+  nav {
+    justify-content: space-between;
+    padding: 0px 40px 0px 50px;
+  }
+  .logo,
+  .account-and-cart {
+    transform: scale(0.8);
+  }
   .categories-and-deals-list {
     display: none;
   }
@@ -884,6 +909,10 @@ footer {
 }
 
 @media only screen and (max-width: 850px) {
+  .logo,
+  .account-and-cart {
+    transform: scale(0.8);
+  }
   .profile-photo {
     width: 50%;
   }
@@ -900,6 +929,13 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
+  nav {
+    height: 50px;
+  }
+  .logo,
+  .account-and-cart {
+    transform: scale(0.8);
+  }
   .search {
     display: none;
   }
@@ -909,7 +945,9 @@ footer {
     font-size: 29px;
   }
   nav {
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0px 30px 0px 60px;
+    height: 80px;
   }
 
   .slideshow {
@@ -944,6 +982,13 @@ footer {
   .todays-deals-list {
     grid-template-columns: 1fr 1fr;
   }
+  nav {
+    height: 70px;
+  }
+  .logo,
+  .account-and-cart {
+    transform: scale(0.8);
+  }
 
   .buy-btn button {
     font-size: 14px;
@@ -973,6 +1018,10 @@ footer {
 }
 
 @media only screen and (max-width: 510px) {
+  .logo,
+  .account-and-cart {
+    transform: scale(0.8);
+  }
   .stars {
     font-size: 12px;
   }
@@ -985,12 +1034,16 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+  nav {
+    height: 70px;
+  }
   .banner-text > h1 {
     font-size: 36px;
   }
 
-  .logo {
-    width: 55px;
+  .logo,
+  .account-and-cart {
+    transform: scale(0.8);
   }
 
   .show-more-btn {
@@ -1020,7 +1073,7 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
   nav {
-    padding: 10px 25px;
+    padding: 10px 25px 10px 45px;
   }
   .logo {
     gap: 2px;
@@ -1035,6 +1088,16 @@ footer {
 }
 
 @media only screen and (max-width: 410px) {
+  .logo,
+  .account-and-cart {
+    transform: scale(0.8);
+  }
+  .categories-and-deals-list-phone {
+    font-size: 0.5em;
+  }
+  .banner-text > h1 {
+    font-size: 1.5em;
+  }
   .stars {
     font-size: 8.5px;
   }
