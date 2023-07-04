@@ -29,7 +29,6 @@ a {
 }
 
 nav {
-  position: fixed;
   position: relative;
   z-index: 1;
   width: 100%;
@@ -47,7 +46,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
 }
 
 .sedc-logo {
@@ -189,6 +187,7 @@ ul li:hover ul.dropdown {
 
 .menu {
   display: none;
+  margin: 15px;
 }
 
 .search-button-phone {
@@ -488,7 +487,7 @@ main {
 }
 
 .prices-and-btn {
-  font-size: 15px;
+  font-size: 15 px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -503,6 +502,10 @@ main {
   border-radius: 6px;
   cursor: pointer;
   transition: 0.2s;
+}
+
+.buy-btn:hover button {
+  background-color: #a5d7e8;
 }
 
 .show-more-btn,
@@ -637,7 +640,7 @@ main {
 .slideshow {
   width: 80%;
   background-color: gainsboro;
-  height: 350px;
+  height: 370px;
   background-image: url(./images/furniture-sale-slideshow.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -666,11 +669,16 @@ footer {
   font-size: 0.8em;
   padding: 0.3em;
   outline: none;
+  border-radius: 10px;
 }
 
 .form-button {
   font-size: 0.8em;
-  padding: 0.3em;
+  padding: 0.4em;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
 }
 
 .footer-links {
@@ -686,10 +694,18 @@ footer {
   font-size: large;
 }
 
+.footer-links a:hover {
+  color: #a5d7e8;
+}
+
 .back-arrow {
   color: #406882;
   font-size: larger;
   cursor: pointer;
+}
+
+.home-btn {
+  width: 100%;
 }
 
 /*  */
@@ -766,7 +782,7 @@ footer {
   }
 
   .todays-deals-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .show-more-btn {
@@ -813,6 +829,12 @@ footer {
   .slide {
     gap: 8%;
   }
+  .newsletter {
+    height: 200px;
+  }
+  .footer-links {
+    height: 150px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -824,6 +846,11 @@ footer {
     font-size: 40px;
     cursor: pointer;
   }
+
+  .sedc-logo {
+    width: 65px;
+  }
+
   nav {
     gap: 5%;
   }
@@ -867,6 +894,9 @@ footer {
   .comment {
     font-size: 15px;
   }
+  h2 {
+    font-size: large;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -898,6 +928,15 @@ footer {
 
   .slide {
     gap: 6%;
+  }
+  .newsletter {
+    font-size: large;
+  }
+  .footer-links a {
+    font-size: small;
+  }
+  .category {
+    height: 250px;
   }
 }
 
@@ -990,6 +1029,9 @@ footer {
   .account-and-cart {
     gap: 10px;
   }
+  .footer-links {
+    gap: 10px;
+  }
 }
 
 @media only screen and (max-width: 410px) {
@@ -1003,6 +1045,15 @@ footer {
 
   .comment {
     font-size: 8px;
+  }
+  .category {
+    height: 220px;
+  }
+  .sedc-logo {
+    width: 55px;
+  }
+  .menu {
+    margin: 8px;
   }
 }
 

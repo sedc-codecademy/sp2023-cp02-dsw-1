@@ -65,7 +65,7 @@ const menuDisplay = () => {
    </ul>
  </div>
 </li>
-<li class="phone-menu-item middle-item"><a href="#">Deals</a></li>
+<li class="phone-menu-item middle-item"><a href="./deals/index.html">Deals</a></li>
 <li class="phone-menu-item"><a href="./contact/index.html">Contact</a></li>
 </ul>`;
 };
