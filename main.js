@@ -17,6 +17,12 @@ const searchBtn = document.querySelector(".search-button");
 const searchInput = document.querySelector(".search-bar");
 const searchBtnPhone = document.querySelector(".search-btn-phone");
 const searchInputPhone = document.querySelector(".search-bar-phone");
+const mainBody = document.querySelector("main");
+const productInfoContainer = document.querySelector(".container");
+const quantityElement = document.querySelector(".quantity-number");
+const minusButton = document.querySelector(".minus");
+const plusButton = document.querySelector(".plus");
+const totalPrice = document.querySelector(".total-price");
 
 searchInputPhone.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
@@ -181,24 +187,51 @@ const fetchLocalData = async () => {
 
       const lastSix = dealsItems.slice(6);
 
-      lastSix.forEach((item) => {
-        todaysDealsDiv.innerHTML += `
-          <div class="todays-list-item">
-          <img src="${item.image}" alt="">
-          <div class="prices-and-btn">
-            <div class="deal-text">
-              <div class="deal">27% off</div>
-              <span class="new-price">${
-                Math.round(item.price * 27) / 100
-              }</span>
-          <span class="old-price"><s>${item.price}$</s></span>
-            </div>
-            <div class="buy-btn">
-              <button>Buy Now</button>
-            </div>
-          </div>
-        </div>
-      `;
+      lastSix.map((item) => {
+        const dealItem = document.createElement("div");
+        dealItem.classList.add("todays-list-item");
+
+        const image = document.createElement("img");
+        image.src = item.image;
+        image.alt = "";
+        dealItem.appendChild(image);
+
+        const pricesAndBtn = document.createElement("div");
+        pricesAndBtn.classList.add("prices-and-btn");
+
+        const dealText = document.createElement("div");
+        dealText.classList.add("deal-text");
+
+        const deal = document.createElement("div");
+        deal.classList.add("deal");
+        deal.textContent = "27% off";
+        dealText.appendChild(deal);
+
+        const newPrice = document.createElement("span");
+        newPrice.classList.add("new-price");
+        newPrice.textContent = `${((item.price * 27) / 100).toFixed(2)} $`;
+        dealText.appendChild(newPrice);
+
+        const oldPrice = document.createElement("span");
+        oldPrice.classList.add("old-price");
+        oldPrice.innerHTML = `<s>${item.price} $</s>`;
+        dealText.appendChild(oldPrice);
+
+        pricesAndBtn.appendChild(dealText);
+
+        const buyBtn = document.createElement("div");
+        buyBtn.classList.add("buy-btn");
+        const button = document.createElement("button");
+        button.textContent = "Buy Now";
+        buyBtn.appendChild(button);
+        buyBtn.addEventListener("click", () => {
+          ProductInfo(item);
+        });
+        pricesAndBtn.appendChild(buyBtn);
+
+        dealItem.appendChild(pricesAndBtn);
+
+        todaysDealsDiv.appendChild(dealItem);
       });
     });
 
@@ -208,22 +241,51 @@ const fetchLocalData = async () => {
 
       const firstSix = dealsItems.slice(0, 6);
       todaysDealsDiv.innerHTML = ` `;
-      firstSix.forEach((item) => {
-        todaysDealsDiv.innerHTML += `
-      <div class="todays-list-item">
-      <img src="${item.image}" alt="">
-      <div class="prices-and-btn">
-        <div class="deal-text">
-          <div class="deal">27% off</div>
-          <span class="new-price">${Math.round(item.price * 27) / 100}</span>
-          <span class="old-price"><s>${item.price}$</s></span>
-        </div>
-        <div class="buy-btn">
-          <button>Buy Now</button>
-        </div>
-      </div>
-    </div>
-  `;
+      firstSix.map((item) => {
+        const dealItem = document.createElement("div");
+        dealItem.classList.add("todays-list-item");
+
+        const image = document.createElement("img");
+        image.src = item.image;
+        image.alt = "";
+        dealItem.appendChild(image);
+
+        const pricesAndBtn = document.createElement("div");
+        pricesAndBtn.classList.add("prices-and-btn");
+
+        const dealText = document.createElement("div");
+        dealText.classList.add("deal-text");
+
+        const deal = document.createElement("div");
+        deal.classList.add("deal");
+        deal.textContent = "27% off";
+        dealText.appendChild(deal);
+
+        const newPrice = document.createElement("span");
+        newPrice.classList.add("new-price");
+        newPrice.textContent = `${((item.price * 27) / 100).toFixed(2)} $`;
+        dealText.appendChild(newPrice);
+
+        const oldPrice = document.createElement("span");
+        oldPrice.classList.add("old-price");
+        oldPrice.innerHTML = `<s>${item.price} $</s>`;
+        dealText.appendChild(oldPrice);
+
+        pricesAndBtn.appendChild(dealText);
+
+        const buyBtn = document.createElement("div");
+        buyBtn.classList.add("buy-btn");
+        const button = document.createElement("button");
+        button.textContent = "Buy Now";
+        buyBtn.appendChild(button);
+        buyBtn.addEventListener("click", () => {
+          ProductInfo(item);
+        });
+        pricesAndBtn.appendChild(buyBtn);
+
+        dealItem.appendChild(pricesAndBtn);
+
+        todaysDealsDiv.appendChild(dealItem);
       });
     });
 
@@ -238,23 +300,81 @@ const displayDeals = (data) => {
   const firstSix = data.slice(0, 6);
 
   firstSix.forEach((item) => {
-    todaysDealsDiv.innerHTML += `
-      <div class="todays-list-item">
-      <img src="${item.image}" alt="">
-      <div class="prices-and-btn">
-        <div class="deal-text">
-          <div class="deal">27% off</div>
-          <span class="new-price">${((item.price * 27) / 100).toFixed(
-            2
-          )} $</span>
-          <span class="old-price"><s>${item.price} $</s></span>
-        </div>
-        <div class="buy-btn">
-          <button>Buy Now</button>
-        </div>
-      </div>
-    </div>
-  `;
+    const dealItem = document.createElement("div");
+    dealItem.classList.add("todays-list-item");
+
+    const image = document.createElement("img");
+    image.src = item.image;
+    image.alt = "";
+    dealItem.appendChild(image);
+
+    const pricesAndBtn = document.createElement("div");
+    pricesAndBtn.classList.add("prices-and-btn");
+
+    const dealText = document.createElement("div");
+    dealText.classList.add("deal-text");
+
+    const deal = document.createElement("div");
+    deal.classList.add("deal");
+    deal.textContent = "27% off";
+    dealText.appendChild(deal);
+
+    const newPrice = document.createElement("span");
+    newPrice.classList.add("new-price");
+    newPrice.textContent = `${((item.price * 27) / 100).toFixed(2)} $`;
+    dealText.appendChild(newPrice);
+
+    const oldPrice = document.createElement("span");
+    oldPrice.classList.add("old-price");
+    oldPrice.innerHTML = `<s>${item.price} $</s>`;
+    dealText.appendChild(oldPrice);
+
+    pricesAndBtn.appendChild(dealText);
+
+    const buyBtn = document.createElement("div");
+    buyBtn.classList.add("buy-btn");
+    const button = document.createElement("button");
+    button.textContent = "Buy Now";
+    buyBtn.appendChild(button);
+    buyBtn.addEventListener("click", () => {
+      ProductInfo(item);
+    });
+    pricesAndBtn.appendChild(buyBtn);
+
+    dealItem.appendChild(pricesAndBtn);
+
+    todaysDealsDiv.appendChild(dealItem);
+  });
+};
+
+const ProductInfo = (product) => {
+  mainBody.style.display = "none";
+  productInfoContainer.style.display = "block";
+  document.querySelector(".back-button").addEventListener("click", () => {
+    mainBody.style.display = "flex";
+    productInfoContainer.style.display = "none";
+  });
+  totalPrice.innerHTML = product.price;
+  document.querySelector(".product-title").innerHTML = product.title;
+  document.querySelector(".product-description").innerHTML =
+    product.description;
+  document.querySelector(
+    ".product-image"
+  ).innerHTML = `<img src="${product.image}"/>`;
+
+  minusButton.addEventListener("click", () => {
+    if (quantityElement.value < 2) {
+      minusButton.disabled = true;
+    } else {
+      quantityElement.value--;
+    }
+    totalPrice.innerHTML = product.price * quantityElement.value;
+  });
+
+  plusButton.addEventListener("click", () => {
+    quantityElement.value++;
+    totalPrice.innerHTML = product.price * quantityElement.value;
+    minusButton.disabled = false;
   });
 };
 
