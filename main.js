@@ -4,9 +4,50 @@ const slides = document.getElementsByClassName("slide");
 const carouselContent = document.querySelector(".carousel-content");
 const scrollLeftBtn = document.querySelector(".prev-btn");
 const scrollRightBtn = document.querySelector(".next-btn");
+const showMoreBtn = document.querySelector(".show-more-btn");
+const todaysDealsDiv = document.querySelector(".todays-deals-list");
+const showLessBtn = document.querySelector(".show-less-btn");
+const menuButton = document.querySelector(".menu");
+const menu = document.querySelector(".categories-and-deals-list-phone");
+const categoriesButton = document.querySelector(".categories-phone-link");
+const showSearchButton = document.querySelector(".search-button-phone");
+const searchDisplay = document.querySelector(".search-display-phone");
+const reviewDiv = document.querySelector(".carousel-content");
+const searchBtn = document.querySelector(".search-button");
+const searchInput = document.querySelector(".search-bar");
+const searchBtnPhone = document.querySelector(".search-btn-phone");
+const searchInputPhone = document.querySelector(".search-bar-phone");
+
+searchInputPhone.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    const url = searchInput.value.toLowerCase();
+    window.open(`./${url}/index.html`);
+  }
+});
+
+searchBtnPhone.addEventListener("click", () => {
+  const url = searchInputPhone.value;
+  window.open(`./${url}/index.html`);
+});
+
+searchInput.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    const url = searchInput.value.toLowerCase();
+    console.log(url);
+
+    window.open(`./${url}/index.html`);
+  }
+});
+
+searchBtn.addEventListener("click", () => {
+  const url = searchInput.value;
+  console.log(url);
+
+  window.open(`./${url}/index.html`);
+});
 
 scrollLeftBtn.addEventListener("click", () => {
-  slideIndex -= slideWidth;
+  slideIndex -= 100;
 
   if (slideIndex < 0) slideIndex = 0;
 
@@ -14,10 +55,12 @@ scrollLeftBtn.addEventListener("click", () => {
 });
 
 scrollRightBtn.addEventListener("click", () => {
-  slideIndex += slideWidth;
+  slideIndex += 100;
 
-  if (slideIndex > (slides.length - 1) * slideWidth) {
-    slideIndex = (slides.length - 1) * slideWidth;
+  const maxSlideIndex = (slides.length - 1) * 100;
+
+  if (slideIndex > maxSlideIndex) {
+    slideIndex = maxSlideIndex;
   }
 
   carouselContent.style.transform = `translateX(-${slideIndex}%)`;
@@ -39,12 +82,6 @@ scrollRightBtn.addEventListener("click", () => {
 
   setInterval(changeBackground, 4000);
 })();
-
-const menuButton = document.querySelector(".menu");
-const menu = document.querySelector(".categories-and-deals-list-phone");
-const categoriesButton = document.querySelector(".categories-phone-link");
-const showSearchButton = document.querySelector(".search-button-phone");
-const searchDisplay = document.querySelector(".search-display-phone");
 
 const menuDisplay = () => {
   searchDisplay.style.display = "none";
@@ -88,7 +125,7 @@ const collapseMenu = () => {
     </ul>
   </div>
 </li>
-<li class="phone-menu-item middle-item"><a href="#">Deals</a></li>
+<li class="phone-menu-item middle-item"><a href="./deals/index.html">Deals</a></li>
 <li class="phone-menu-item"><a href="#">Contact</a></li>
 </ul>`;
 };
@@ -132,10 +169,6 @@ const showSearch = () => {
   }
 };
 
-const showMoreBtn = document.querySelector(".show-more-btn");
-const todaysDealsDiv = document.querySelector(".todays-deals-list");
-const showLessBtn = document.querySelector(".show-less-btn");
-
 const fetchLocalData = async () => {
   try {
     const res = await fetch("./db/products.json");
@@ -149,15 +182,16 @@ const fetchLocalData = async () => {
       const lastSix = dealsItems.slice(6);
 
       lastSix.forEach((item) => {
-        const oldPrice = item.price + item.price * 0.27;
         todaysDealsDiv.innerHTML += `
           <div class="todays-list-item">
           <img src="${item.image}" alt="">
           <div class="prices-and-btn">
             <div class="deal-text">
               <div class="deal">27% off</div>
-              <span class="new-price">${item.price}</span>
-              <span class="old-price"><s>${oldPrice.toFixed(2)}$</s></span>
+              <span class="new-price">${
+                Math.round(item.price * 27) / 100
+              }</span>
+          <span class="old-price"><s>${item.price}$</s></span>
             </div>
             <div class="buy-btn">
               <button>Buy Now</button>
@@ -175,15 +209,14 @@ const fetchLocalData = async () => {
       const firstSix = dealsItems.slice(0, 6);
       todaysDealsDiv.innerHTML = ` `;
       firstSix.forEach((item) => {
-        const oldPrice = item.price + item.price * 0.27;
         todaysDealsDiv.innerHTML += `
       <div class="todays-list-item">
       <img src="${item.image}" alt="">
       <div class="prices-and-btn">
         <div class="deal-text">
           <div class="deal">27% off</div>
-          <span class="new-price">${item.price}</span>
-          <span class="old-price"><s>${oldPrice.toFixed(2)}$</s></span>
+          <span class="new-price">${Math.round(item.price * 27) / 100}</span>
+          <span class="old-price"><s>${item.price}$</s></span>
         </div>
         <div class="buy-btn">
           <button>Buy Now</button>
@@ -205,15 +238,16 @@ const displayDeals = (data) => {
   const firstSix = data.slice(0, 6);
 
   firstSix.forEach((item) => {
-    const oldPrice = item.price + item.price * 0.27;
     todaysDealsDiv.innerHTML += `
       <div class="todays-list-item">
       <img src="${item.image}" alt="">
       <div class="prices-and-btn">
         <div class="deal-text">
           <div class="deal">27% off</div>
-          <span class="new-price">${item.price}</span>
-          <span class="old-price"><s>${oldPrice.toFixed(2)}$</s></span>
+          <span class="new-price">${((item.price * 27) / 100).toFixed(
+            2
+          )} $</span>
+          <span class="old-price"><s>${item.price} $</s></span>
         </div>
         <div class="buy-btn">
           <button>Buy Now</button>
@@ -223,3 +257,103 @@ const displayDeals = (data) => {
   `;
   });
 };
+
+const fetchReviews = async () => {
+  try {
+    const res = await fetch("./db/products.json");
+    const data = await res.json();
+    const reviews = data.filter((item) => item.category === "reviews");
+    function myFunction(x) {
+      if (x.matches) {
+        slideIndex = 0;
+        carouselContent.style.transform = `translateX(0%)`;
+
+        let reviewDivContent = "";
+
+        reviews.forEach((review, index) => {
+          if (index % 2 === 0) {
+            if (index !== 0) {
+              reviewDivContent += "</div>";
+            }
+            reviewDivContent += '<div class="slide">';
+          }
+
+          reviewDivContent += `
+            <div class="cloud">
+              <div class="profile">
+                <img src="${review.image}" alt="" class="profile-photo" />
+                <span class="name">${review.name}</span>
+              </div>
+              <div class="rating">
+                <div class="comment">
+                  "${review.review}"
+                </div>
+              </div>
+              <div class="stars">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+              </div>
+            </div>
+          `;
+        });
+
+        reviewDivContent += "</div>";
+
+        reviewDiv.innerHTML = reviewDivContent;
+      } else {
+        slideIndex = 0;
+        carouselContent.style.transform = `translateX(0%)`;
+        let reviewDivContent = "";
+
+        let nineReviews = reviews.slice(0, 9);
+
+        nineReviews.forEach((review, index) => {
+          if (index % 3 === 0) {
+            if (index !== 0) {
+              reviewDivContent += "</div>";
+            }
+            reviewDivContent += '<div class="slide">';
+          }
+
+          reviewDivContent += `
+            <div class="cloud">
+              <div class="profile">
+                <img src="${review.image}" alt="" class="profile-photo" />
+                <span class="name">${review.name}</span>
+              </div>
+              <div class="rating">
+                <div class="comment">
+                  "${review.review}"
+                </div>
+              </div>
+              <div class="stars">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+              </div>
+            </div>
+          `;
+        });
+
+        reviewDivContent += "</div>";
+
+        reviewDiv.innerHTML = reviewDivContent;
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 700px)");
+    myFunction(x);
+    x.addListener(myFunction);
+    return data;
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+fetchReviews();
+
+const showReviews = (data) => {};

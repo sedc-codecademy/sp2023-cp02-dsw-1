@@ -1389,6 +1389,13 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  .back-button {
+    position: relative;
+    left: -5rem;
+    width: 5rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+  }
   .container {
     display: flex;
     flex-direction: column;

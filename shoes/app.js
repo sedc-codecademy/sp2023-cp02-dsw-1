@@ -4,14 +4,17 @@ const cardSection = document.querySelector(".card-section");
 const kidsCategory = document.querySelector(".kids");
 const mensCategory = document.querySelector(".mens");
 const allProducts = document.querySelector(".all-products");
+const burgerMenuButton = document.querySelector(".burger-menu");
+const cancelButton = document.querySelector(".cancel-button");
+const quantityElement = document.querySelector(".quantity-number");
+const minusButton = document.querySelector(".minus");
+const plusButton = document.querySelector(".plus");
+const totalPrice = document.querySelector(".total-price");
+const produtCardDetails = document.querySelector(".product-card-details");
+const productInfoContainer = document.querySelector(".container");
 
 const filteredArray = [];
 const data = [];
-
-const ProductInfo = (data) => {
-  mainBody.innerHTML = `<div><h3>${data.title}</h3></div>
-<div><p>${data.price}</p></div>`;
-};
 
 const allProductsButton = (productsData) => {
   allProducts.addEventListener("click", () => {
@@ -28,7 +31,6 @@ const displayData = (data) => {
         productDiv.classList.add("main-product-card-div");
         cardSection.appendChild(productDiv);
         productDiv.addEventListener("click", () => {
-          console.log(data);
           ProductInfo(products);
         });
         return (productDiv.innerHTML = `
@@ -85,6 +87,50 @@ const mensCategoryButton = (productsData) => {
   });
 };
 
+burgerMenuButton.addEventListener("click", () => {
+  burgerMenuButton.style.visibility = "hidden";
+  cancelButton.style.visibility = "visible";
+  cancelButton.addEventListener("click", () => {
+    burgerMenuButton.style.visibility = "visible";
+    cancelButton.style.visibility = "hidden";
+    document.querySelector(".burger-menu-dropdown").style.display = "none";
+  });
+  document.querySelector(".burger-menu-dropdown").style.display = "flex";
+});
+
+const ProductInfo = (product) => {
+  quantityElement.value = 1;
+  mainBody.style.display = "none";
+  productInfoContainer.style.display = "block";
+  document.querySelector(".back-button").addEventListener("click", () => {
+    quantityElement.value = 1;
+    mainBody.style.display = "flex";
+    productInfoContainer.style.display = "none";
+    console.log(quantityElement.value);
+  });
+  totalPrice.innerHTML = product.price;
+  document.querySelector(".product-title").innerHTML = product.title;
+  document.querySelector(".product-description").innerHTML =
+    product.description;
+  document.querySelector(
+    ".product-image"
+  ).innerHTML = `<img src="${product.image}"/>`;
+
+  minusButton.addEventListener("click", () => {
+    if (quantityElement.value < 2) {
+      minusButton.disabled = true;
+    } else {
+      quantityElement.value--;
+    }
+    totalPrice.innerHTML = product.price * quantityElement.value;
+  });
+  plusButton.addEventListener("click", () => {
+    quantityElement.value++;
+    totalPrice.innerHTML = product.price * quantityElement.value;
+    minusButton.disabled = false;
+    console.log(quantityElement.value);
+  });
+};
 // Fetching data from local JSON file
 const fetchLocalData = async () => {
   try {

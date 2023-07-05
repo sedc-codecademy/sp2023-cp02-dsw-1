@@ -62,7 +62,9 @@
 
   <header class="bottomHeader">
     <div class="logo">
-      <img src="../Images/sedc-logo.webp" alt="SEDC logo" class="sedc-logo" />
+      <a href="/index.html">
+        <img src="../Images/sedc-logo.webp" alt="SEDC logo" class="sedc-logo" />
+      </a>
       <div class="menu">
         <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
           xmlns="http://www.w3.org/2000/svg" class="menu-icon" onclick='menuDisplay()'>
@@ -103,9 +105,8 @@
             </ul>
           </div>
         </li>
-        <li><a href="#">Deals</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="../index.html">SEDC Home</a></li>
+        <li><a href="../deals/index.html">Deals</a></li>
+        <li><a href="../contact/index.html">Contact</a></li>
       </ul>
 
     </div>
@@ -149,7 +150,7 @@
         </svg>
       </div>
       <div class="cart">
-        <a href="#" class="cart">
+        <a href="../cart/index.html" class="cart">
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="2em"
             width="2em" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -188,9 +189,17 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent2">
       <ul class="navbar-nav mr-auto" id="secondCategoryNav">
+
+
+        <li>
+          <a class="nav-link allProducts menuCategory" id="products" href="#">All Products</a>
+        </li>
+
+
+
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle menuCategory" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle menuCategory" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Earrings
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -204,8 +213,8 @@
 
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle menuCategory" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle menuCategory" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Rings
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -219,9 +228,9 @@
 
 
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle menuCategory" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown dropdown">
+          <a class="nav-link dropdown-toggle menuCategory" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Necklace
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -233,9 +242,7 @@
           </div>
         </li>
 
-        <li>
-        <a class=" nav-link allProducts menuCategory" href="#">See All</a>
-      </li>
+
       </ul>
     </div>
   </nav>

@@ -11,7 +11,7 @@ const minusButton = document.querySelector(".minus");
 const plusButton = document.querySelector(".plus");
 const totalPrice = document.querySelector(".total-price");
 const produtCardDetails = document.querySelector(".product-card-details");
-
+const productInfoContainer = document.querySelector(".container");
 const filteredArray = [];
 const data = [];
 
@@ -127,51 +127,20 @@ fetchLocalData();
 categoryFilter(filteredArray, data);
 
 const ProductInfo = (product) => {
-  mainBody.innerHTML = ` <div class="container">
-      <div class="product-div">
-        <div class="product-image">
-        <img src="${product.image}" alt="">
-        </div>
-        <div class="product-details">
-          <h1 class="product-title">${product.title}</h1>
-          <p class="product-description">${product.description}</p>
-          <div class="product-quantity">
-            <p>Quantity</p>
-            <div class="product-quantity-buttons">
-              <button type="button" class="minus" disabled>-</button>
-              <input class="quantity-number" value="1" readonly></input>
-              <button type="button" class="plus" onClick="${PlusButton(
-                product.price
-              )}">+</button>
-            </div>
-            <p class="product-price">${
-              product.price
-            }<b><span class="total-price"></span>$</b></p>
-          </div>
-          <div class="atc-buy-buttons">
-            <button type="button" class="atc" >Add to cart</button>
-            <button type="button" class="buy">Buy now</button>
-          </div>
-        </div>
-      </div>
-      <div class="product-specifications">
-        <h2>Product specifications</h2>
-        <br />
-        <ul class="specifications-list">
-
-        </ul>
-      </div>
-    </div>`;
-};
-const PlusButton = (product) => {
-  plusButton.addEventListener("click", () => {
-    quantityElement.value++;
-    totalPrice.innerHTML = product.price * quantityElement.value;
-    minusButton.disabled = false;
+  mainBody.style.display = "none";
+  productInfoContainer.style.display = "block";
+  document.querySelector(".back-button").addEventListener("click", () => {
+    mainBody.style.display = "flex";
+    productInfoContainer.style.display = "none";
   });
-};
+  totalPrice.innerHTML = product.price;
+  document.querySelector(".product-title").innerHTML = product.title;
+  document.querySelector(".product-description").innerHTML =
+    product.description;
+  document.querySelector(
+    ".product-image"
+  ).innerHTML = `<img src="${product.image}"/>`;
 
-const MinusButton = (product) => {
   minusButton.addEventListener("click", () => {
     if (quantityElement.value < 2) {
       minusButton.disabled = true;
@@ -179,5 +148,11 @@ const MinusButton = (product) => {
       quantityElement.value--;
     }
     totalPrice.innerHTML = product.price * quantityElement.value;
+  });
+
+  plusButton.addEventListener("click", () => {
+    quantityElement.value++;
+    totalPrice.innerHTML = product.price * quantityElement.value;
+    minusButton.disabled = false;
   });
 };
