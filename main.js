@@ -349,7 +349,7 @@ const displayDeals = (data) => {
 
 const ProductInfo = (product) => {
   mainBody.style.display = "none";
-  productInfoContainer.style.display = "block";
+  productInfoContainer.style.display = "flex";
   document.querySelector(".back-button").addEventListener("click", () => {
     mainBody.style.display = "flex";
     productInfoContainer.style.display = "none";
