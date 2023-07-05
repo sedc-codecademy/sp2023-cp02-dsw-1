@@ -110,6 +110,3 @@ function updateTotal() {
 
 //Fetching the products
 fetchProducts("https://fakestoreapi.com/products");
-
-//Links to main html
-//Footer ?
