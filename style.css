@@ -576,12 +576,6 @@ main {
   gap: 5%;
 }
 
-.review {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
-}
-
 .buttons {
   margin-top: 10px;
   position: absolute;
@@ -595,6 +589,7 @@ main {
 .cloud {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 8px;
   padding: 10px;
   max-width: 25%;
@@ -602,6 +597,7 @@ main {
   color: dimgray;
   font-size: 18px;
   border-radius: 8px;
+  align-self: stretch;
 }
 
 .stars {
@@ -610,15 +606,19 @@ main {
   text-align: center;
 }
 .profile {
-  font-size: larger;
-  flex-direction: column;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   color: black;
 }
 .profile-photo {
-  width: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.name {
+  font-size: 22px;
+  text-align: center;
 }
 
 .scroll-button {
@@ -767,12 +767,18 @@ footer {
 }
 
 @media only screen and (max-width: 1350px) {
-  .profile-photo {
-    width: 55%;
-  }
-
   .stars {
     font-size: 30px;
+  }
+  .name {
+    font-size: 18px;
+  }
+  .comment {
+    font-size: 16px;
+  }
+  .profile-photo {
+    width: 55px;
+    height: 55px;
   }
 }
 
@@ -830,17 +836,29 @@ footer {
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .stars {
+    font-size: 26px;
+  }
+  .name {
+    font-size: 16px;
+  }
+  .comment {
+    font-size: 14px;
+  }
+  .profile-photo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile {
+    gap: 10px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   nav {
     gap: 3%;
-  }
-
-  .profile-photo {
-    width: 50%;
-  }
-
-  .stars {
-    font-size: 25px;
   }
 
   .slide {
@@ -851,6 +869,20 @@ footer {
   }
   .footer-links {
     height: 150px;
+  }
+
+  .stars {
+    font-size: 24px;
+  }
+  .name {
+    font-size: 14px;
+  }
+  .comment {
+    font-size: 12px;
+  }
+  .profile-photo {
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -874,6 +906,10 @@ footer {
 
   .sedc-logo {
     width: 65px;
+  }
+
+  .profile {
+    gap: 5px;
   }
 
   nav {
@@ -913,16 +949,6 @@ footer {
   .account-and-cart {
     transform: scale(0.8);
   }
-  .profile-photo {
-    width: 50%;
-  }
-
-  .stars {
-    font-size: 20px;
-  }
-  .comment {
-    font-size: 15px;
-  }
   h2 {
     font-size: large;
   }
@@ -955,17 +981,24 @@ footer {
   }
 
   .stars {
-    font-size: 15px;
+    font-size: 26px;
   }
   .comment {
-    font-size: 12px;
+    font-size: 14px;
   }
   .name {
-    font-size: large;
+    font-size: 16px;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+  .cloud {
+    max-width: 40%;
   }
 
   .slide {
-    gap: 6%;
+    gap: 2%;
   }
   .newsletter {
     font-size: large;
@@ -975,6 +1008,9 @@ footer {
   }
   .category {
     height: 250px;
+  }
+  .scroll-button {
+    padding: 0 5px;
   }
 }
 
@@ -1021,15 +1057,6 @@ footer {
   .logo,
   .account-and-cart {
     transform: scale(0.8);
-  }
-  .stars {
-    font-size: 12px;
-  }
-  .comment {
-    font-size: 10px;
-  }
-  .name {
-    font-size: small;
   }
 }
 
@@ -1085,6 +1112,20 @@ footer {
   .footer-links {
     gap: 10px;
   }
+
+  .stars {
+    font-size: 20px;
+  }
+  .comment {
+    font-size: 12px;
+  }
+  .name {
+    font-size: 14px;
+  }
+  .profile-photo {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 @media only screen and (max-width: 410px) {
@@ -1098,16 +1139,19 @@ footer {
   .banner-text > h1 {
     font-size: 1.5em;
   }
-  .stars {
-    font-size: 8.5px;
-  }
-
-  .name {
-    font-size: 12px;
-  }
-
   .comment {
-    font-size: 8px;
+    font-size: 10px;
+  }
+
+  .stars {
+    font-size: 18px;
+  }
+  .cloud {
+    max-width: 45%;
+  }
+
+  .slide {
+    gap: 5%;
   }
   .category {
     height: 220px;

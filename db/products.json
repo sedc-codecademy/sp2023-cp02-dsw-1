@@ -1406,5 +1406,67 @@
     "image": "../music/assets/Keys/roland JUNO-ds76.jpg",
     "category": "keys",
     "subCategory": "deals"
+  },
+
+  {
+    "name": "Ivan Mihajlovski",
+    "review": "Best design I have ever seen. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
+    "image": "../images/ivan-mihajlovski.jpg",
+    "category": "reviews"
+  },
+  {
+    "name": "Nikola Stojkovski",
+    "review": "Best site ever Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
+    "image": "../images/nikola-stojkovski.jpg",
+    "category": "reviews"
+  },
+  {
+    "name": "Marko Ingjikj",
+    "review": "Best site ever. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
+    "image": "../images/marko-ingjikj.jpg",
+    "category": "reviews"
+  },
+
+  {
+    "name": "Ivan Mihajlovski",
+    "review": "Best design I have ever seen. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
+    "image": "../images/ivan-mihajlovski.jpg",
+    "category": "reviews"
+  },
+  {
+    "name": "Nikola Stojkovski",
+    "review": "Best site ever Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
+    "image": "../images/nikola-stojkovski.jpg",
+    "category": "reviews"
+  },
+  {
+    "name": "Marko Ingjikj",
+    "review": "Best site ever. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
+    "image": "../images/marko-ingjikj.jpg",
+    "category": "reviews"
+  },
+  {
+    "name": "Ivan Mihajlovski",
+    "review": "Best design I have ever seen. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
+    "image": "../images/ivan-mihajlovski.jpg",
+    "category": "reviews"
+  },
+  {
+    "name": "Nikola Stojkovski",
+    "review": "Best site ever Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
+    "image": "../images/nikola-stojkovski.jpg",
+    "category": "reviews"
+  },
+  {
+    "name": "Marko Ingjikj",
+    "review": "Best site ever. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
+    "image": "../images/marko-ingjikj.jpg",
+    "category": "reviews"
+  },
+  {
+    "name": "Ivan Mihajlovski",
+    "review": "Best design I have ever seen. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
+    "image": "../images/ivan-mihajlovski.jpg",
+    "category": "reviews"
   }
 ]
