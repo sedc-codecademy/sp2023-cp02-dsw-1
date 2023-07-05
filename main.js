@@ -15,6 +15,29 @@ const searchDisplay = document.querySelector(".search-display-phone");
 const reviewDiv = document.querySelector(".carousel-content");
 const searchBtn = document.querySelector(".search-button");
 const searchInput = document.querySelector(".search-bar");
+const searchBtnPhone = document.querySelector(".search-btn-phone");
+const searchInputPhone = document.querySelector(".search-bar-phone");
+
+searchInputPhone.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    const url = searchInput.value.toLowerCase();
+    window.open(`./${url}/index.html`);
+  }
+});
+
+searchBtnPhone.addEventListener("click", () => {
+  const url = searchInputPhone.value;
+  window.open(`./${url}/index.html`);
+});
+
+searchInput.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    const url = searchInput.value.toLowerCase();
+    console.log(url);
+
+    window.open(`./${url}/index.html`);
+  }
+});
 
 searchBtn.addEventListener("click", () => {
   const url = searchInput.value;

@@ -28,6 +28,12 @@ a {
   display: none;
 }
 
+.back-arrow {
+  color: #406882;
+  font-size: larger;
+  cursor: pointer;
+}
+
 nav {
   position: relative;
   z-index: 1;
@@ -39,6 +45,10 @@ nav {
   justify-content: center;
   gap: 5%;
   padding: 10px;
+}
+
+.home-btn {
+  width: 100%;
 }
 
 .logo {
@@ -715,16 +725,6 @@ footer {
   color: #a5d7e8;
 }
 
-.back-arrow {
-  color: #406882;
-  font-size: larger;
-  cursor: pointer;
-}
-
-.home-btn {
-  width: 100%;
-}
-
 /*  */
 /*  */
 /*  */
@@ -945,10 +945,6 @@ footer {
 }
 
 @media only screen and (max-width: 850px) {
-  .logo,
-  .account-and-cart {
-    transform: scale(0.8);
-  }
   h2 {
     font-size: large;
   }
