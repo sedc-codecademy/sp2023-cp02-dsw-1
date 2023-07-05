@@ -1312,6 +1312,246 @@
     "subCategory": "electronic"
   },
   {
+    "title": "Floral Print Midi Dress",
+    "description": "A beautiful floral print midi dress perfect for any occasion. Made with high-quality fabric for a comfortable fit.",
+    "price": 39.99,
+    "image": "https://example.com/floralmidi.jpg",
+    "category": "woman-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Striped Button-Down Shirt",
+    "description": "A classic striped button-down shirt that can be dressed up or down. Made with soft and breathable material.",
+    "price": 29.99,
+    "image": "https://example.com/stripedshirt.jpg",
+    "category": "woman-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Denim Jacket",
+    "description": "A trendy denim jacket with a distressed design. Perfect for adding a stylish touch to any outfit.",
+    "price": 49.99,
+    "image": "https://example.com/denimjacket.jpg",
+    "category": "woman-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Knit Sweater",
+    "description": "A cozy and comfortable knit sweater with a relaxed fit. Ideal for colder days or layering.",
+    "price": 34.99,
+    "image": "https://example.com/knitsweater.jpg",
+    "category": "woman-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "High-Waisted Jeans",
+    "description": "A pair of high-waisted jeans with a flattering fit. Made with stretchy denim for all-day comfort.",
+    "price": 44.99,
+    "image": "https://example.com/highwaistedjeans.jpg",
+    "category": "woman-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Wrap Dress",
+    "description": "A stylish wrap dress with a V-neckline and a tie-waist design. Perfect for a chic and feminine look.",
+    "price": 49.99,
+    "image": "https://example.com/wrapdress.jpg",
+    "category": "woman-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Printed Blouse",
+    "description": "A printed blouse with a flowy silhouette and a vibrant pattern. Great for adding a pop of color to your outfit.",
+    "price": 24.99,
+    "image": "https://example.com/printedblouse.jpg",
+    "category": "woman-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Pleated Skirt",
+    "description": "A pleated skirt with a midi length and a comfortable elastic waistband. Versatile and easy to style.",
+    "price": 34.99,
+    "image": "https://example.com/pleatedskirt.jpg",
+    "category": "woman-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Cropped Cardigan",
+    "description": "A cropped cardigan with a button-up front and three-quarter sleeves. Perfect for layering over dresses or tops.",
+    "price": 29.99,
+    "image": "https://example.com/croppedcardigan.jpg",
+    "category": "woman-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Wide-Leg Jumpsuit",
+    "description": "A trendy wide-leg jumpsuit with a flattering silhouette. Made with soft and breathable fabric for all-day comfort.",
+    "price": 54.99,
+    "image": "https://example.com/widelegjumpsuit.jpg",
+    "category": "woman-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Printed T-Shirt",
+    "description": "A fun and colorful printed t-shirt for kids. Made with soft and breathable fabric.",
+    "price": 12.99,
+    "image": "https://example.com/printedtshirt.jpg",
+    "category": "kids-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Denim Overalls",
+    "description": "Adorable denim overalls for kids. Perfect for casual and playful outfits.",
+    "price": 24.99,
+    "image": "https://example.com/denimoveralls.jpg",
+    "category": "kids-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Cotton Dress",
+    "description": "A comfortable and stylish cotton dress for girls. Ideal for both everyday wear and special occasions.",
+    "price": 19.99,
+    "image": "https://example.com/cottondress.jpg",
+    "category": "kids-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Graphic Sweatshirt",
+    "description": "A cozy graphic sweatshirt for kids with a cool design. Perfect for keeping them warm and stylish.",
+    "price": 16.99,
+    "image": "https://example.com/graphicsweatshirt.jpg",
+    "category": "kids-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Striped Polo Shirt",
+    "description": "A classic striped polo shirt for boys. Made with soft and durable fabric for everyday comfort.",
+    "price": 14.99,
+    "image": "https://example.com/stripedpolo.jpg",
+    "category": "kids-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Tutu Skirt",
+    "description": "A cute and twirly tutu skirt for little girls. Perfect for dress-up and dance parties.",
+    "price": 9.99,
+    "image": "https://example.com/tutuskirt.jpg",
+    "category": "kids-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Printed Leggings",
+    "description": "Comfortable and stretchy printed leggings for kids. Great for active play and everyday wear.",
+    "price": 11.99,
+    "image": "https://example.com/printedleggings.jpg",
+    "category": "kids-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Hooded Jacket",
+    "description": "A warm and cozy hooded jacket for kids. Perfect for chilly days and outdoor activities.",
+    "price": 29.99,
+    "image": "https://example.com/hoodedjacket.jpg",
+    "category": "kids-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Printed Onesie",
+    "description": "An adorable printed onesie for infants. Made with soft and gentle fabric for their delicate skin.",
+    "price": 8.99,
+    "image": "https://example.com/printedonesie.jpg",
+    "category": "kids-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Cargo Shorts",
+    "description": "Stylish cargo shorts for boys. Designed with plenty of pockets for a cool and functional look.",
+    "price": 17.99,
+    "image": "https://example.com/cargoshorts.jpg",
+    "category": "kids-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Crew Neck T-Shirt",
+    "description": "A classic crew neck t-shirt made with soft and breathable fabric. Perfect for everyday wear.",
+    "price": 19.99,
+    "image": "https://example.com/crewnecktshirt.jpg",
+    "category": "men's-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Slim Fit Jeans",
+    "description": "A pair of slim fit jeans made with comfortable stretch denim. Versatile and easy to style.",
+    "price": 49.99,
+    "image": "https://example.com/slimfitjeans.jpg",
+    "category": "men's-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Plaid Button-Up Shirt",
+    "description": "A stylish plaid button-up shirt for a polished yet casual look. Made with soft and durable fabric.",
+    "price": 34.99,
+    "image": "https://example.com/plaidshirt.jpg",
+    "category": "men's-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Hooded Sweatshirt",
+    "description": "A comfortable and warm hooded sweatshirt with a relaxed fit. Great for layering or wearing on its own.",
+    "price": 39.99,
+    "image": "https://example.com/hoodedsweatshirt.jpg",
+    "category": "men's-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Polo Shirt",
+    "description": "A classic polo shirt made with breathable fabric. Suitable for both casual and semi-formal occasions.",
+    "price": 29.99,
+    "image": "https://example.com/poloshirt.jpg",
+    "category": "men's-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Chino Pants",
+    "description": "A pair of versatile chino pants suitable for both work and leisure. Comfortable and stylish.",
+    "price": 59.99,
+    "image": "https://example.com/chinopants.jpg",
+    "category": "men's-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Leather Jacket",
+    "description": "A timeless leather jacket with a sleek and rugged design. Made with high-quality leather for durability.",
+    "price": 149.99,
+    "image": "https://example.com/leatherjacket.jpg",
+    "category": "men's-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Striped Sweater",
+    "description": "A stylish striped sweater with a comfortable and cozy feel. Perfect for cooler days.",
+    "price": 44.99,
+    "image": "https://example.com/stripedsweater.jpg",
+    "category": "men's-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "Casual Shorts",
+    "description": "A pair of casual shorts for a laid-back summer look. Made with lightweight and breathable fabric.",
+    "price": 24.99,
+    "image": "https://example.com/casualshorts.jpg",
+    "category": "men's-clothes",
+    "subCategory": "clothes"
+  },
+  {
+    "title": "V-Neck Sweater",
+    "description": "A classic V-neck sweater made with soft and warm fabric. Versatile and suitable for various occasions.",
+    "price": 49.99,
+    "image": "https://example.com/vnecksweater.jpg",
+    "category": "men's-clothes",
+    "subCategory": "clothes"
+  },
+  {
     "title": "Corsair K70 RGB MK.2 Mechanical Gaming Keyboard",
     "description": "The Corsair K70 RGB MK.2 is a full-size mechanical gaming keyboard featuring Cherry MX switches, per-key RGB lighting, and dedicated multimedia controls.",
     "price": 159.99,

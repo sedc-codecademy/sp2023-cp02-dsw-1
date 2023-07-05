@@ -215,27 +215,60 @@
     <main class="main">
       <!-- Product Cards -->
       <div class="category-nav">
-        <div class="border">
+        <div class="border menu-item">
           <h3 class="all-products">All Products</h3>
         </div>
-        <div class="border">
+        <div class="border menu-item">
           <h3 class="guitars">Guitars</h3>
         </div>
-        <div class="border">
+        <div class="border menu-item">
           <h3 class="bass-guitars">Bass Guitars</h3>
         </div>
-        <div class="border">
+        <div class="border menu-item">
           <h3 class="keys">Keys</h3>
         </div>
-        <div class="border">
+        <div class="border menu-item">
           <h3 class="drums">Drums</h3>
         </div>
-        <div class="border">
+        <div class="border menu-item">
           <h3 class="microphones">Microphones</h3>
         </div>
       </div>
+      </div>
       <div class="card-section"></div>
+      
     </main>
+     <div class="container">
+      <button type="button" class="back-button"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 11L6.414 11 11.707 5.707 10.293 4.293 2.586 12 10.293 19.707 11.707 18.293 6.414 13 21 13z"></path></svg>Go back</button>
+      <div class="product-div">
+        <div class="product-image">
+        </div>
+        <div class="product-details">
+          <h1 class="product-title"></h1>
+          <p class="product-description"></p>
+          <div class="product-quantity">
+            <p>Quantity</p>
+            <div class="product-quantity-buttons">
+              <button type="button" class="minus" disabled>-</button>
+              <input class="quantity-number" value="1" readonly></input>
+              <button type="button" class="plus">+</button>
+            </div>
+            <p class="product-price"><b><span class="total-price"></span>$</b></p>
+          </div>
+          <div class="atc-buy-buttons">
+            <button type="button" class="atc">Add to cart</button>
+            <button type="button" class="buy">Buy now</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-specifications">
+        <h2>Product specifications</h2>
+        <br />
+        <ul class="specifications-list">
+       
+        </ul>
+      </div>
+    </div>
   </body>
   <footer>
     <div class="newsletter">

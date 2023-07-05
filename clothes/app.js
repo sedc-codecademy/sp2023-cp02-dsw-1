@@ -1,9 +1,8 @@
 const mainBody = document.querySelector(".main");
-const camera = document.querySelector(".camera");
+const womanCategory = document.querySelector(".woman");
 const cardSection = document.querySelector(".card-section");
-const console = document.querySelector(".console");
-const device = document.querySelector(".device");
-const mouse_keyboard = document.querySelector(".mouse_keyboard");
+const kidsCategory = document.querySelector(".kids");
+const mensCategory = document.querySelector(".mens");
 const allProducts = document.querySelector(".all-products");
 const burgerMenuButton = document.querySelector(".burger-menu");
 const cancelButton = document.querySelector(".cancel-button");
@@ -17,11 +16,19 @@ const productInfoContainer = document.querySelector(".container");
 const filteredArray = [];
 const data = [];
 
+const allProductsButton = (productsData) => {
+  allProducts.addEventListener("click", () => {
+    cardSection.innerHTML = "";
+    displayData(productsData);
+  });
+};
+
 const displayData = (data) => {
   data
     .map((products) => {
-      if (products.subCategory == "electronic") {
+      if (products.subCategory == "clothes") {
         const productDiv = document.createElement("div");
+        productDiv.classList.add("main-product-card-div");
         cardSection.appendChild(productDiv);
         productDiv.addEventListener("click", () => {
           ProductInfo(products);
@@ -50,46 +57,33 @@ const categoryFilter = (filteredArray, dummyData, category) => {
   }
 };
 
-const allProductsButton = (productsData) => {
-  allProducts.addEventListener("click", () => {
+const womanCategoryButton = (productsData) => {
+  const filteredArray = [];
+  categoryFilter(filteredArray, productsData, "woman-clothes");
+  womanCategory.addEventListener("click", () => {
     cardSection.innerHTML = "";
-    displayData(productsData);
+    displayData(filteredArray);
+    // womanCategory.classList.add("clickedButton");
   });
 };
 
-const cameraButton = (productsData) => {
+const kidsCategoryButton = (productsData) => {
   const filteredArray = [];
-  categoryFilter(filteredArray, productsData, "camera");
-  camera.addEventListener("click", () => {
+  categoryFilter(filteredArray, productsData, "kids-clothes");
+  kidsCategory.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
+    // kidsCategory.classList.add("clickedButton");
   });
 };
 
-const consoleButton = (productsData) => {
+const mensCategoryButton = (productsData) => {
   const filteredArray = [];
-  categoryFilter(filteredArray, productsData, "console");
-  console.addEventListener("click", () => {
+  categoryFilter(filteredArray, productsData, "men's-clothes");
+  mensCategory.addEventListener("click", () => {
     cardSection.innerHTML = "";
     displayData(filteredArray);
-  });
-};
-
-const deviceButton = (productsData) => {
-  const filteredArray = [];
-  categoryFilter(filteredArray, productsData, "mobile");
-  device.addEventListener("click", () => {
-    cardSection.innerHTML = "";
-    displayData(filteredArray);
-  });
-};
-
-const mouse_keyboardButton = (productsData) => {
-  const filteredArray = [];
-  categoryFilter(filteredArray, productsData, "keyboard");
-  mouse_keyboard.addEventListener("click", () => {
-    cardSection.innerHTML = "";
-    displayData(filteredArray);
+    // mensCategory.classList.add("clickedButton");
   });
 };
 
@@ -105,11 +99,14 @@ burgerMenuButton.addEventListener("click", () => {
 });
 
 const ProductInfo = (product) => {
+  quantityElement.value = 1;
   mainBody.style.display = "none";
   productInfoContainer.style.display = "block";
   document.querySelector(".back-button").addEventListener("click", () => {
+    quantityElement.value = 1;
     mainBody.style.display = "flex";
     productInfoContainer.style.display = "none";
+    console.log(quantityElement.value);
   });
   totalPrice.innerHTML = product.price;
   document.querySelector(".product-title").innerHTML = product.title;
@@ -127,22 +124,22 @@ const ProductInfo = (product) => {
     }
     totalPrice.innerHTML = product.price * quantityElement.value;
   });
-
   plusButton.addEventListener("click", () => {
     quantityElement.value++;
     totalPrice.innerHTML = product.price * quantityElement.value;
     minusButton.disabled = false;
+    console.log(quantityElement.value);
   });
 };
+// Fetching data from local JSON file
 const fetchLocalData = async () => {
   try {
     const res = await fetch("../db/products.json");
     const data = await res.json();
+    mensCategoryButton(data);
+    kidsCategoryButton(data);
+    womanCategoryButton(data);
     displayData(data);
-    cameraButton(data);
-    consoleButton(data);
-    deviceButton(data);
-    mouse_keyboardButton(data);
     allProductsButton(data);
     return data;
   } catch (error) {
