@@ -679,6 +679,7 @@ footer {
 .product-card-header {
   min-width: 320px;
   min-height: 320px;
+  cursor: pointer;
 }
 
 .product-card-header > img {
@@ -1211,6 +1212,7 @@ footer {
   background-color: var(--dark-color);
   border: 1px solid var(--dark-color);
   color: white;
+  cursor: pointer;
 }
 .back-button:hover {
   background-color: inherit;
@@ -1287,6 +1289,7 @@ footer {
 .minus {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .quantity-number {
@@ -1304,6 +1307,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  cursor: pointer;
 }
 
 .atc-buy-buttons {
@@ -1328,6 +1332,7 @@ footer {
 .atc {
   background-color: inherit;
   border: 1px solid var(--accent-color);
+  cursor: pointer;
 }
 
 .atc:hover {
@@ -1339,6 +1344,7 @@ footer {
   background-color: var(--dark-color);
   border: 1px solid var(--dark-color);
   color: white;
+  cursor: pointer;
 }
 
 .buy:hover {
@@ -1453,6 +1459,7 @@ footer {
   border: none;
   border-radius: 6px;
   transition: 0.2s;
+  cursor: pointer;
 }
 .form-button:hover {
   transition: 0.2s;
