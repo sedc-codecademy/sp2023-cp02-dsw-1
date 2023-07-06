@@ -24,12 +24,21 @@ a {
 }
 /*        NAV SECTION */
 
+nav svg {
+  fill: black;
+}
+
 .account-phone-screen {
   display: none;
 }
 
+.back-arrow {
+  color: #406882;
+  font-size: larger;
+  cursor: pointer;
+}
+
 nav {
-  position: fixed;
   position: relative;
   z-index: 1;
   width: 100%;
@@ -42,12 +51,15 @@ nav {
   padding: 10px;
 }
 
+.home-btn {
+  width: 100%;
+}
+
 .logo {
   width: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
 }
 
 .sedc-logo {
@@ -60,6 +72,10 @@ nav {
   align-items: center;
   gap: 16px;
   font-size: 18px;
+}
+
+.links:hover {
+  color: var(--accent-color);
 }
 
 .sub-category {
@@ -185,6 +201,7 @@ ul li:hover ul.dropdown {
 
 .menu {
   display: none;
+  margin: 15px;
 }
 
 .search-button-phone {
@@ -243,60 +260,6 @@ ul li:hover ul.dropdown {
 
 .dropdown-li-phone {
   padding: 10px;
-}
-
-/*       BANNER SECTION */
-
-.banner {
-  width: 100%;
-  height: 60vh;
-  background-image: url(./Images/banner.jpg);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
-  background-size: cover;
-  backdrop-filter: blur(3px);
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  padding: 10%;
-}
-
-.banner-text {
-  width: auto;
-  border-radius: 8px;
-  backdrop-filter: blur(1px);
-  box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.3);
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 1%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  color: var(--header-color);
-}
-.banner-text > h1 {
-  color: white;
-  font-size: 60px;
-}
-.banner-text > p {
-  font-size: 20px;
-}
-
-.banner-button {
-  width: 150px;
-  border: 0;
-  color: white;
-  box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  font-size: 20px;
-  padding: 10px;
-  cursor: pointer;
-  background-color: var(--accent-color);
-  transition: 0.3s;
-}
-.banner-button:hover {
-  background-color: white;
-  color: var(--accent-color);
 }
 
 /*        MAIN SECTION */
@@ -1448,5 +1411,190 @@ footer {
 
   .product-specifications > ul > li {
     font-size: 0.5rem;
+  }
+}
+
+footer {
+  width: 100%;
+}
+
+.newsletter {
+  height: 150px;
+  background-color: #406882;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.4em;
+}
+
+.form-input {
+  font-size: 0.8em;
+  padding: 0.3em;
+  outline: none;
+  border: 0;
+  opacity: 50%;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.form-input:hover,
+.form-input:focus {
+  transition: 0.2s;
+  opacity: 100%;
+}
+
+.form-button {
+  font-size: 0.8em;
+  padding: 0.4em;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+.form-button:hover {
+  transition: 0.2s;
+  transform: scale(1.05);
+  box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+.footer-links {
+  height: 100px;
+  background-color: #1a374d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-links a {
+  color: white;
+  font-size: large;
+  transition: 0.2s;
+}
+
+.footer-links a:hover {
+  transition: 0.2s;
+  color: #a5d7e8;
+}
+
+@media only screen and (max-width: 1200px) {
+  .account {
+    display: none;
+  }
+  .account-phone-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+  }
+  .cart-text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    gap: 3%;
+  }
+
+  .newsletter {
+    height: 200px;
+  }
+  .footer-links {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  nav {
+    justify-content: space-between;
+    padding: 0px 40px 0px 50px;
+    gap: 5%;
+  }
+  .logo,
+  .account-and-cart {
+    transform: scale(0.8);
+  }
+  .categories-and-deals-list {
+    display: none;
+  }
+  .menu {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .sedc-logo {
+    width: 65px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    height: 50px;
+  }
+  .search {
+    display: none;
+  }
+
+  .search-button-phone {
+    display: block;
+    font-size: 29px;
+  }
+  nav {
+    justify-content: space-between;
+    padding: 0px 30px 0px 60px;
+    height: 80px;
+  }
+
+  .slide {
+    gap: 2%;
+  }
+  .newsletter {
+    font-size: large;
+  }
+  .footer-links a {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .todays-deals-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  nav {
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    height: 70px;
+  }
+
+  nav {
+    padding: 10px 25px 10px 45px;
+  }
+
+  .account-and-cart {
+    gap: 10px;
+  }
+
+  .footer-links {
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .categories-and-deals-list-phone {
+    font-size: 0.5em;
+  }
+  .sedc-logo {
+    width: 55px;
+  }
+  .menu {
+    margin: 8px;
   }
 }
