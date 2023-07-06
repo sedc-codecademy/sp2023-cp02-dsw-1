@@ -3,25 +3,23 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SEDC-Project</title>
-  <link rel="icon" href="./Images/sedc-logo.webp" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./app.js" defer></script>
+  <title>Clothes - Category</title>
 </head>
 
 <body>
-  <!--          NAV SECTION -->
   <nav>
     <div class="logo">
-      <a href="./index.html" class="home-btn">
-        <img src="./Images/sedc-logo.webp" alt="SEDC logo" class="sedc-logo" />
+      <a href="../index.html" class="home-btn">
+        <img src="../images/sedc-logo.webp" alt="SEDC logo" class="sedc-logo" />
       </a>
       <div class="menu">
         <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
           xmlns="http://www.w3.org/2000/svg" class="menu-icon" onclick="menuDisplay()">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+          </path>
         </svg>
         <ul class="categories-and-deals-list-phone">
           <li class="phone-menu-item">
@@ -36,10 +34,10 @@
             </div>
           </li>
           <li class="phone-menu-item middle-item">
-            <a href="./deals/index.html">Deals</a>
+            <a href="../deals/index.html">Deals</a>
           </li>
           <li class="phone-menu-item">
-            <a href="./contact/index.html">Contact</a>
+            <a href="../contact/index.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -53,19 +51,18 @@
               <li>
                 <a href="#" class="links">Categories</a>
                 <ul class="dropdown">
+                  <li class="dropdown-li"><a href="#">Clothes</a></li>
                   <li class="dropdown-li">
-                    <a href="./clothes/index.html">Clothes</a></li>
-                  <li class="dropdown-li">
-                    <a href="./shoes/index.html">Shoes</a>
+                    <a href="../shoes/index.html">Shoes</a>
                   </li>
                   <li class="dropdown-li">
-                    <a href="./jewellery/index.html">Jewellery</a>
+                    <a href="../jewellery/index.html">Jewellery</a>
                   </li>
                   <li class="dropdown-li">
-                    <a href="./electronics/index.html">Electronics</a>
+                    <a href="../electronics/index.html">Electronics</a>
                   </li>
                   <li class="dropdown-li">
-                    <a href="./music/index.html">Music</a>
+                    <a href="../music/index.html">Music</a>
                   </li>
                   <li class="dropdown-li"><a href="#">Furniture</a></li>
                 </ul>
@@ -73,8 +70,8 @@
             </ul>
           </div>
         </li>
-        <li><a href="./deals/index.html" class="links">Deals</a></li>
-        <li><a href="./contact/index.html" class="links">Contact</a></li>
+        <li><a href="../deals/index.html" class="links">Deals</a></li>
+        <li><a href="../contact/index.html" class="links">Contact</a></li>
       </ul>
     </div>
 
@@ -98,10 +95,10 @@
         </path>
       </svg>
       <div class="account">
-        <a href="#">
+        <a href="./index.html">
           <p class="account-options sign-up">Sign Up</p>
         </a>
-        <a href="#">
+        <a href="./index.html">
           <p class="account-options log-in">Log In</p>
         </a>
       </div>
@@ -117,7 +114,7 @@
         </svg>
       </div>
       <div class="cart">
-        <a href="./cart/index.html" class="cart">
+        <a href="../cart/index.html" class="cart">
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="2em"
             width="2em" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -141,92 +138,59 @@
           </svg>
         </a>
       </div>
-    </div>
   </nav>
-
-  <main onclick="collapseMenu()">
-    <section class="banner">
-      <div class="banner-text">
-        <h1>Shopping And<br />Department Store.</h1>
-        <p>
-          Shopping is a bit of a relaxing hobby for me, which<br />
-          is sometimes troubling for the bank balance.
-        </p>
-        <button class="banner-button">Learn More</button>
+  <main class="main">
+    <!-- Product Cards -->
+    <div class="category-nav">
+      <div class="border first">
+        <h3 class="all-products label">All Products</h3>
       </div>
-    </section>
-
-    <section class="slideshow"></section>
-    <section class="categories-most-searched">
-      <h2 class="title">Most Searched Categories</h2>
-
-      <div class="category-examples">
-        <div class="category" onclick="">
-          <div class="category-div clothes-img">
-            <a href="./clothes/index.html" class="category-link">Clothes</a>
-          </div>
-        </div>
-
-        <div class="category" onclick="">
-          <div class="category-div furniture-img">
-            <a href="#" class="category-link">Furniture</a>
-          </div>
-        </div>
-
-        <div class="category" onclick="">
-          <div class="category-div music-img">
-            <a href="./music/index.html" class="category-link">Music</a>
-          </div>
-        </div>
-
-        <div class="category" onclick="">
-          <div class="category-div electronics-img">
-            <a href="./electronics/index.html" class="category-link">Electronics</a>
-          </div>
-        </div>
-
-        <div class="category" onclick="">
-          <div class="category-div shoes-img">
-            <a href="./shoes/index.html" class="category-link">Shoes</a>
-          </div>
-        </div>
-
-        <div class="category" onclick="">
-          <div class="category-div jewelry-img">
-            <a href="./jewellery/index.html" class="category-link">Jewelry</a>
-          </div>
-        </div>
+      <div class="border first">
+        <h3 class="woman label">Woman</h3>
       </div>
-    </section>
-
-    <section class="todays-deals">
-      <h2 class="todays-deals-h2">Today's Deals</h2>
-
-      <div class="todays-deals-list"></div>
-
-      <button class="show-more-btn">View More</button>
-      <button class="show-less-btn">View Less</button>
-    </section>
-
-    <section class="rating-section">
-      <h2 class="rating-title">Ratings</h2>
-
-      <div class="carousel">
-        <div class="carousel-content">
-
-        </div>
-
-        <div class="buttons">
-          <button class="prev-btn scroll-button">
-            < </button>
-              <button class="next-btn scroll-button">></button>
-        </div>
+      <div class="border first">
+        <h3 class="kids label">Kids</h3>
       </div>
-
-    </section>
+      <div class="border first">
+        <h3 class="mens label">Men's</h3>
+      </div>
+      <svg class="burger-menu" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <style>
+          svg {
+            fill: #ffffff;
+          }
+        </style>
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+      </svg>
+      <svg class="cancel-button" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512">
+        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <style>
+          svg {
+            fill: #ffffff;
+          }
+        </style>
+        <path
+          d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+      </svg>
+    </div>
+    <div class="burger-menu-dropdown">
+      <div class="border second">
+        <h3 class="all-products label">All Products</h3>
+      </div>
+      <div class="border second">
+        <h3 class="woman label">Woman</h3>
+      </div>
+      <div class="border second">
+        <h3 class="kids label">Kids</h3>
+      </div>
+      <div class="border second">
+        <h3 class="mens label">Men's</h3>
+      </div>
+    </div>
+    <div class="card-section"></div>
   </main>
-
-
   <div class="container">
     <button type="button" class="back-button"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
         viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -242,7 +206,7 @@
           <p>Quantity</p>
           <div class="product-quantity-buttons">
             <button type="button" class="minus" disabled>-</button>
-            <input class="quantity-number" value="1" readonly></input>
+            <input class="quantity-number" readonly></input>
             <button type="button" class="plus">+</button>
           </div>
           <p class="product-price"><b><span class="total-price"></span>$</b></p>
@@ -261,25 +225,23 @@
       </ul>
     </div>
   </div>
-
-  <footer>
-    <div class="newsletter">
-      <h2>Newsletter</h2>
-      <form class="footer-form">
-        <input type="email" placeholder="your@email.com" class="form-input" />
-        <button class="form-button">Subscribe</button>
-      </form>
-    </div>
-    <div class="footer-links">
-      <a href="">About</a>
-      <a href="">Store locator</a>
-      <a href="">FAQs</a>
-      <a href="">News</a>
-      <a href="./contact/index.html">Contact Us</a>
-    </div>
-  </footer>
-
-
 </body>
+
+<footer>
+  <div class="newsletter">
+    <h2>Newsletter</h2>
+    <form class="footer-form">
+      <input type="email" placeholder="your@email.com" class="form-input" />
+      <button class="form-button">Subscribe</button>
+    </form>
+  </div>
+  <div class="footer-links">
+    <a href="">About</a>
+    <a href="">Store locator</a>
+    <a href="">FAQs</a>
+    <a href="">News</a>
+    <a href="./contact/index.html">Contact Us</a>
+  </div>
+</footer>
 
 </html>
