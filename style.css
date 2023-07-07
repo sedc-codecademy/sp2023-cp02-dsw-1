@@ -1199,7 +1199,7 @@ footer {
 /*  */
 /*  */
 /*  */
-
+/* 
 .container {
   margin: 0 auto;
   max-width: 70%;
@@ -1424,3 +1424,9 @@ footer {
     font-size: 0.5rem;
   }
 }
+
+@media only screen and (max-width: 1600px) {
+  .slideshow {
+    height: 330px;
+  }
+} */
