@@ -3,6 +3,7 @@
 :root {
   --header-color: #a5d7e8;
   --site-background: ghostwhite;
+  --dark-color: #1b170d;
   --accent-color: #4f2f60;
 }
 
@@ -799,11 +800,6 @@ footer {
   border-bottom: 1px solid rgb(154, 150, 150);
   transition: 0.3s;
   margin-bottom: 1rem;
-}
-.clickedButton {
-  background-color: rgba(153, 150, 150, 0.584);
-  color: white;
-  border-radius: 6px;
 }
 
 .category-nav > h3 {

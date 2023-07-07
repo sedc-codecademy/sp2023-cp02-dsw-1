@@ -185,7 +185,7 @@ const fetchLocalData = async () => {
       showMoreBtn.style.display = "none";
       showLessBtn.style.display = "block";
 
-      const lastSix = dealsItems.slice(6);
+      const lastSix = dealsItems.slice(12);
 
       lastSix.map((item) => {
         const dealItem = document.createElement("div");
@@ -239,7 +239,7 @@ const fetchLocalData = async () => {
       showMoreBtn.style.display = "block";
       showLessBtn.style.display = "none";
 
-      const firstSix = dealsItems.slice(0, 6);
+      const firstSix = dealsItems.slice(0, 12);
       todaysDealsDiv.innerHTML = ` `;
       firstSix.map((item) => {
         const dealItem = document.createElement("div");
@@ -297,7 +297,7 @@ const fetchLocalData = async () => {
 fetchLocalData();
 
 const displayDeals = (data) => {
-  const firstSix = data.slice(0, 6);
+  const firstSix = data.slice(0, 12);
 
   firstSix.forEach((item) => {
     const dealItem = document.createElement("div");
@@ -368,12 +368,12 @@ const ProductInfo = (product) => {
     } else {
       quantityElement.value--;
     }
-    totalPrice.innerHTML = product.price * quantityElement.value;
+    totalPrice.innerHTML = (product.price * quantityElement.value).toFixed(2);
   });
 
   plusButton.addEventListener("click", () => {
     quantityElement.value++;
-    totalPrice.innerHTML = product.price * quantityElement.value;
+    totalPrice.innerHTML = (product.price * quantityElement.value).toFixed(2);
     minusButton.disabled = false;
   });
 };

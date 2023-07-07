@@ -1647,6 +1647,102 @@
     "category": "keys",
     "subCategory": "deals"
   },
+  {
+    "title": "Fossil Gen 6 Smartwatch",
+    "description": "The Fossil Gen 6 Smartwatch is a stylish and feature-packed wearable device. It offers a vibrant display, fitness tracking, and compatibility with popular apps.",
+    "price": 249.99,
+    "image": "../images/deals/pic1.jpg",
+    "category": "wearables",
+    "subCategory": "deals"
+  },
+  {
+    "title": "DJI Mavic Air 2 Drone",
+    "description": "The DJI Mavic Air 2 is a compact and powerful drone with a high-resolution camera. It offers intelligent flight modes and impressive image quality.",
+    "price": 799.99,
+    "image": "../images/deals/pic2.jpg",
+    "category": "drones",
+    "subCategory": "deals"
+  },
+  {
+    "title": "LG OLED CX Series 4K Smart TV",
+    "description": "The LG OLED CX Series Smart TV offers stunning picture quality with deep blacks and vibrant colors. It features a sleek design and supports popular streaming apps.",
+    "price": 1799.99,
+    "image": "../images/deals/pic3.jpg",
+    "category": "TVs",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Bose QuietComfort Earbuds",
+    "description": "The Bose QuietComfort Earbuds are wireless earbuds that offer excellent noise cancellation and immersive sound. They are comfortable to wear and have a long battery life.",
+    "price": 279.99,
+    "image": "../images/deals/pic4.jpg",
+    "category": "headphones",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Nikon D850 DSLR Camera",
+    "description": "The Nikon D850 is a professional-grade DSLR camera that offers exceptional image quality, fast performance, and advanced features. It's a favorite among photographers.",
+    "price": 2999.99,
+    "image": "../images/deals/pic5.jpg",
+    "category": "cameras",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Gibson Les Paul Standard Electric Guitar",
+    "description": "The Gibson Les Paul Standard is an iconic electric guitar known for its rich tone and timeless design. It's a favorite among professional guitarists.",
+    "price": 2499.99,
+    "image": "../images/deals/pic6.jpg",
+    "category": "guitar",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Neumann U87 AI Condenser Microphone",
+    "description": "The Neumann U87 AI is a legendary condenser microphone known for its pristine sound quality and versatility. It's widely used in professional recording studios.",
+    "price": 3499.99,
+    "image": "../images/deals/pic7.jpg",
+    "category": "microphones",
+    "subCategory": "deals"
+  },
+  {
+    "title": "DW Collector's Series Drum Kit",
+    "description": "The DW Collector's Series is a premium drum kit that offers exceptional sound and craftsmanship. It's the choice of many professional drummers.",
+    "price": 4999.99,
+    "image": "../images/deals/pic8.jpg",
+    "category": "drums",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Moog Subsequent 37 Analog Synthesizer",
+    "description": "The Moog Subsequent 37 is a powerful analog synthesizer with a rich and expressive sound. It's perfect for creating deep basslines and soaring leads.",
+    "price": 1999.99,
+    "image": "../images/deals/pic9.jpg",
+    "category": "keys",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Sennheiser HD 800 S Reference Headphones",
+    "description": "The Sennheiser HD 800 S headphones are designed for audiophiles seeking the ultimate listening experience. They offer outstanding clarity and detail.",
+    "price": 1699.99,
+    "image": "../images/deals/pic10.jpg",
+    "category": "headphones",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Native Instruments Maschine MK3 Groove Production Studio",
+    "description": "The Native Instruments Maschine MK3 is a versatile groove production studio that combines software and hardware for music production and live performance.",
+    "price": 599.99,
+    "image": "../images/deals/pic11.jpg",
+    "category": "production",
+    "subCategory": "deals"
+  },
+  {
+    "title": "Rode NT1 Large-Diaphragm Condenser Microphone",
+    "description": "The Rode NT1 is a high-quality large-diaphragm condenser microphone known for its low self-noise and transparent sound. It's suitable for vocals and instrument recording.",
+    "price": 299.99,
+    "image": "../images/deals/pic12.jpg",
+    "category": "microphones",
+    "subCategory": "deals"
+  },
 
   {
     "name": "Ivan Mihajlovski",
@@ -1668,45 +1764,53 @@
   },
 
   {
-    "name": "Ivan Mihajlovski",
+    "name": "Amrita Doe",
     "review": "Best design I have ever seen. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
-    "image": "../images/ivan-mihajlovski.jpg",
+    "image": "../images/review-images/pic1.jpg",
     "category": "reviews"
   },
   {
-    "name": "Nikola Stojkovski",
+    "name": "John Doe",
     "review": "Best site ever Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
-    "image": "../images/nikola-stojkovski.jpg",
+    "image": "../images/review-images/pic2.jpg",
     "category": "reviews"
   },
   {
-    "name": "Marko Ingjikj",
+    "name": "Jane Doe",
     "review": "Best site ever. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
-    "image": "../images/marko-ingjikj.jpg",
+    "image": "../images/review-images/pic3.jpg",
     "category": "reviews"
   },
   {
-    "name": "Ivan Mihajlovski",
+    "name": "Jane Doe",
     "review": "Best design I have ever seen. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
-    "image": "../images/ivan-mihajlovski.jpg",
+    "image": "../images/review-images/pic4.jpg",
     "category": "reviews"
   },
   {
-    "name": "Nikola Stojkovski",
+    "name": "John Doe",
     "review": "Best site ever Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
-    "image": "../images/nikola-stojkovski.jpg",
+    "image": "../images/review-images/pic5.jpg",
     "category": "reviews"
   },
   {
-    "name": "Marko Ingjikj",
+    "name": "Jane Doe",
     "review": "Best site ever. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
-    "image": "../images/marko-ingjikj.jpg",
+    "image": "../images/review-images/pic6.jpg",
     "category": "reviews"
   },
   {
-    "name": "Ivan Mihajlovski",
+    "name": "Rajesh Doe",
     "review": "Best design I have ever seen. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium dolor dolorum pariatur. Error amet officiis obcaecati ratione ullam repellat, ducimus veritatis voluptates consequatur odio molestiae quas quasi saepe quos.",
-    "image": "../images/ivan-mihajlovski.jpg",
+    "image": "../images/review-images/pic7.jpg",
     "category": "reviews"
+  },
+  {
+    "title": "Modern Sectional Sofa",
+    "description": "This modern sectional sofa is both stylish and comfortable. It features plush cushions and a sleek design, perfect for lounging and entertaining.",
+    "price": 1299.99,
+    "image": "../furniture/assets/sofas/Modern Sectional Sofa.webp",
+    "category": "furniture",
+    "subCategory": "sofas"
   }
 ]

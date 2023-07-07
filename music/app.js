@@ -147,12 +147,12 @@ const ProductInfo = (product) => {
     } else {
       quantityElement.value--;
     }
-    totalPrice.innerHTML = product.price * quantityElement.value;
+    totalPrice.innerHTML = (product.price * quantityElement.value).toFixed(2);
   });
 
   plusButton.addEventListener("click", () => {
     quantityElement.value++;
-    totalPrice.innerHTML = product.price * quantityElement.value;
+    totalPrice.innerHTML = (product.price * quantityElement.value).toFixed(2);
     minusButton.disabled = false;
   });
 };

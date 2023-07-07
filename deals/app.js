@@ -12,13 +12,13 @@ const displayData = (data) => {
         return (productDiv.innerHTML = `
  		<div class="product-card">
      <div class="product-card-header">
-         <span class ="product-deal">-27%</span>
          <img src="${products.image}"></img>
        </div>
      <div class="product-card-details">
  		<p>${products.title}</h>
- 				<h3>${Math.round(products.price * 27) / 100} $</h3>
+ 				<h3>${(Math.round(products.price * 27) / 100).toFixed(2)} $</h3>
  		</div>
+     <span class="sale">-30%</span>
  		  </div>
  		`);
       }

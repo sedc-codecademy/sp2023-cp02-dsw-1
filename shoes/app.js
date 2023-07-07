@@ -12,6 +12,7 @@ const plusButton = document.querySelector(".plus");
 const totalPrice = document.querySelector(".total-price");
 const produtCardDetails = document.querySelector(".product-card-details");
 const productInfoContainer = document.querySelector(".container");
+const productDetails = document.querySelector(".details");
 
 const filteredArray = [];
 const data = [];
@@ -101,7 +102,7 @@ burgerMenuButton.addEventListener("click", () => {
 const ProductInfo = (product) => {
   quantityElement.value = 1;
   mainBody.style.display = "none";
-  productInfoContainer.style.display = "block";
+  productInfoContainer.style.display = "flex";
   document.querySelector(".back-button").addEventListener("click", () => {
     quantityElement.value = 1;
     mainBody.style.display = "flex";
@@ -115,18 +116,17 @@ const ProductInfo = (product) => {
   document.querySelector(
     ".product-image"
   ).innerHTML = `<img src="${product.image}"/>`;
-
   minusButton.addEventListener("click", () => {
     if (quantityElement.value < 2) {
       minusButton.disabled = true;
     } else {
       quantityElement.value--;
     }
-    totalPrice.innerHTML = product.price * quantityElement.value;
+    totalPrice.innerHTML = (product.price * quantityElement.value).toFixed(2);
   });
   plusButton.addEventListener("click", () => {
     quantityElement.value++;
-    totalPrice.innerHTML = product.price * quantityElement.value;
+    totalPrice.innerHTML = (product.price * quantityElement.value).toFixed(2);
     minusButton.disabled = false;
     console.log(quantityElement.value);
   });

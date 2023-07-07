@@ -8,6 +8,7 @@
     <link rel="icon" href="../images/sedc-logo.webp" />
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
@@ -52,7 +53,7 @@
                             <li>
                                 <a href="#" class="links">Categories</a>
                                 <ul class="dropdown">
-                                    <li class="dropdown-li"><a href="#">Clothes</a></li>
+                                    <li class="dropdown-li"><a href="../clothes/index.html">Clothes</a></li>
                                     <li class="dropdown-li">
                                         <a href="../shoes/index.html">Shoes</a>
                                     </li>
@@ -65,7 +66,7 @@
                                     <li class="dropdown-li">
                                         <a href="../music/index.html">Music</a>
                                     </li>
-                                    <li class="dropdown-li"><a href="#">Furniture</a></li>
+                                    <li class="dropdown-li"><a href="../furniture/index.html">Furniture</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -96,24 +97,26 @@
                 </path>
             </svg>
             <div class="account">
-                <a href="./index.html">
+                <a href="../account/index.html">
                     <p class="account-options sign-up">Sign Up</p>
                 </a>
-                <a href="./index.html">
+                <a href="../account/index.html">
                     <p class="account-options log-in">Log In</p>
                 </a>
             </div>
-            <div class="account-phone-screen">
-                <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M16 9C16 11.2091 14.2091 13 12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5C14.2091 5 16 6.79086 16 9ZM14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z"
-                        fill="currentColor"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM3 12C3 14.0902 3.71255 16.014 4.90798 17.5417C6.55245 15.3889 9.14627 14 12.0645 14C14.9448 14 17.5092 15.3531 19.1565 17.4583C20.313 15.9443 21 14.0524 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM12 21C9.84977 21 7.87565 20.2459 6.32767 18.9878C7.59352 17.1812 9.69106 16 12.0645 16C14.4084 16 16.4833 17.1521 17.7538 18.9209C16.1939 20.2191 14.1881 21 12 21Z"
-                        fill="currentColor"></path>
-                </svg>
-            </div>
+            <a href="../account/index.html">
+                <div class="account-phone-screen">
+                    <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16 9C16 11.2091 14.2091 13 12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5C14.2091 5 16 6.79086 16 9ZM14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z"
+                            fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM3 12C3 14.0902 3.71255 16.014 4.90798 17.5417C6.55245 15.3889 9.14627 14 12.0645 14C14.9448 14 17.5092 15.3531 19.1565 17.4583C20.313 15.9443 21 14.0524 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM12 21C9.84977 21 7.87565 20.2459 6.32767 18.9878C7.59352 17.1812 9.69106 16 12.0645 16C14.4084 16 16.4833 17.1521 17.7538 18.9209C16.1939 20.2191 14.1881 21 12 21Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </a>
             <div class="cart">
                 <a href="../cart/index.html" class="cart">
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="2em"
@@ -143,54 +146,50 @@
 
 
     <main>
-        <div class="cont">
-            <div class="form sign-in">
-                <h2>Welcome</h2>
-                <label>
-                    <span>Email</span>
-                    <input type="email" class="account-input" />
-                </label>
-                <label>
-                    <span>Password</span>
-                    <input type="password" class="account-input" />
-                </label>
-                <p class="forgot-pass">Forgot password?</p>
-                <button type="button" class="submit">Sign In</button>
+        <div class="content">
 
-            </div>
-            <div class="sub-cont">
-                <div class="img">
-                    <div class="img__text m--up">
-
-                        <h3>Don't have an account? Please Sign up!<h3>
+            <div class="text">Sign Up</div>
+            <form action="#">
+                <div class="input-div">
+                    <div class="field">
+                        <span class="fas fa-user"></span>
+                        <input type="text" placeholder="email or phone" class="input" required>
                     </div>
-                    <div class="img__text m--in">
-
-                        <h3>If you already have an account, just sign in.<h3>
-                    </div>
-                    <div class="img__btn">
-                        <span class="m--up">Sign Up</span>
-                        <span class="m--in">Sign In</span>
+                    <div class="field">
+                        <span class="fas fa-lock"></span>
+                        <input type="password" class="input" placeholder="password..." required>
                     </div>
                 </div>
-                <div class="form sign-up-main">
-                    <h2>Create your Account</h2>
-                    <label>
-                        <span>Name</span>
-                        <input type="text" class="account-input" />
-                    </label>
-                    <label>
-                        <span>Email</span>
-                        <input type="email" class="account-input" />
-                    </label>
-                    <label>
-                        <span>Password</span>
-                        <input type="password" class="account-input" />
-                    </label>
-                    <button type="button" class="submit">Sign Up</button>
-
+                <div class="forgot-pass"><a href="#">Forgot Password?</a></div>
+                <button class="btn">Sign in</button>
+                <div class="signup">Not a member?
+                    <a href="#">signup now</a>
                 </div>
-            </div>
+
+                <div class="or">
+                    <div class="line"></div>
+                    <span>or</span>
+                    <div class="line"></div>
+                </div>
+
+
+                <div class="sign-up-with">
+                    <div class="google sign-up-div">
+                        <img src="./images/Google__G__Logo.svg.png" alt="" class="sign-up-logo">
+                        <p>Sign in with Google</p>
+                    </div>
+                    <div class="facebook sign-up-div">
+                        <img src="./images/facebooksvg.png" alt="" class="sign-up-logo">
+                        <p>Sign in with Facebook</p>
+                    </div>
+                    <div class="apple sign-up-div">
+                        <img src="./images/Apple_logo_black.svg.png" alt="" class="sign-up-logo">
+                        <p>Sign in with Apple</p>
+                    </div>
+                </div>
+
+
+            </form>
         </div>
     </main>
 
